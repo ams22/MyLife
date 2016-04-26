@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F17F39101CCF942D00B4654C /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F390F1CCF942D00B4654C /* LoginTableViewController.swift */; };
+		F17F39121CCFA83B00B4654C /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39111CCFA83B00B4654C /* RegistrationTableViewController.swift */; };
+		F17F39161CCFDCD400B4654C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17F39151CCFDCD400B4654C /* SWRevealViewController.m */; };
+		F17F391A1CCFE00500B4654C /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39191CCFE00500B4654C /* MenuController.swift */; };
+		F17F391E1CCFE25B00B4654C /* TimetableMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F391D1CCFE25B00B4654C /* TimetableMenuCell.swift */; };
+		F17F39201CCFE27500B4654C /* SettingsMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F391F1CCFE27500B4654C /* SettingsMenuCell.swift */; };
+		F17F39221CCFE28800B4654C /* UserInfoMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39211CCFE28800B4654C /* UserInfoMenuCell.swift */; };
+		F17F39241CCFE29E00B4654C /* MusicMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39231CCFE29E00B4654C /* MusicMenuCell.swift */; };
+		F17F39261CCFE2C900B4654C /* PhotoMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39251CCFE2C900B4654C /* PhotoMenuCell.swift */; };
+		F17F39281CCFE4B100B4654C /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39271CCFE4B100B4654C /* TimeTableViewController.swift */; };
+		F17F392B1CCFE90C00B4654C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F392A1CCFE90C00B4654C /* SettingsTableViewController.swift */; };
+		F17F392D1CCFEA7300B4654C /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F392C1CCFEA7200B4654C /* MusicViewController.swift */; };
+		F17F392F1CCFEB5700B4654C /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F392E1CCFEB5700B4654C /* PhotoTableViewController.swift */; };
 		F1ABAE271CC8E1D200123FE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABAE261CC8E1D200123FE4 /* AppDelegate.swift */; };
 		F1ABAE291CC8E1D200123FE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABAE281CC8E1D200123FE4 /* ViewController.swift */; };
 		F1ABAE2C1CC8E1D200123FE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABAE2A1CC8E1D200123FE4 /* Main.storyboard */; };
@@ -35,6 +48,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F17F390F1CCF942D00B4654C /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		F17F39111CCFA83B00B4654C /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
+		F17F39131CCFDCB700B4654C /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		F17F39141CCFDCD300B4654C /* MyLife-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyLife-Bridging-Header.h"; sourceTree = "<group>"; };
+		F17F39151CCFDCD400B4654C /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		F17F39191CCFE00500B4654C /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		F17F391D1CCFE25B00B4654C /* TimetableMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimetableMenuCell.swift; sourceTree = "<group>"; };
+		F17F391F1CCFE27500B4654C /* SettingsMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMenuCell.swift; sourceTree = "<group>"; };
+		F17F39211CCFE28800B4654C /* UserInfoMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoMenuCell.swift; sourceTree = "<group>"; };
+		F17F39231CCFE29E00B4654C /* MusicMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicMenuCell.swift; sourceTree = "<group>"; };
+		F17F39251CCFE2C900B4654C /* PhotoMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMenuCell.swift; sourceTree = "<group>"; };
+		F17F39271CCFE4B100B4654C /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
+		F17F392A1CCFE90C00B4654C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		F17F392C1CCFEA7200B4654C /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		F17F392E1CCFEB5700B4654C /* PhotoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
 		F1ABAE231CC8E1D200123FE4 /* MyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1ABAE261CC8E1D200123FE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1ABAE281CC8E1D200123FE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +104,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F17F39171CCFDCF400B4654C /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F17F39131CCFDCB700B4654C /* SWRevealViewController.h */,
+				F17F39151CCFDCD400B4654C /* SWRevealViewController.m */,
+				F17F39141CCFDCD300B4654C /* MyLife-Bridging-Header.h */,
+			);
+			name = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		F17F39181CCFDD3600B4654C /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F1ABAE301CC8E1D200123FE4 /* Assets.xcassets */,
+				F1ABAE321CC8E1D200123FE4 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		F17F391B1CCFE22600B4654C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F17F391C1CCFE23500B4654C /* Menu */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F17F391C1CCFE23500B4654C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F17F391D1CCFE25B00B4654C /* TimetableMenuCell.swift */,
+				F17F39251CCFE2C900B4654C /* PhotoMenuCell.swift */,
+				F17F391F1CCFE27500B4654C /* SettingsMenuCell.swift */,
+				F17F39211CCFE28800B4654C /* UserInfoMenuCell.swift */,
+				F17F39231CCFE29E00B4654C /* MusicMenuCell.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		F17F39291CCFE66D00B4654C /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F1ABAE351CC8E1D200123FE4 /* Info.plist */,
+				F1ABAE2A1CC8E1D200123FE4 /* Main.storyboard */,
+				F1ABAE261CC8E1D200123FE4 /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
 		F1ABAE1A1CC8E1D200123FE4 = {
 			isa = PBXGroup;
 			children = (
@@ -99,12 +176,18 @@
 		F1ABAE251CC8E1D200123FE4 /* MyLife */ = {
 			isa = PBXGroup;
 			children = (
-				F1ABAE261CC8E1D200123FE4 /* AppDelegate.swift */,
+				F17F391B1CCFE22600B4654C /* View */,
+				F17F39171CCFDCF400B4654C /* SWRevealViewController */,
+				F17F39181CCFDD3600B4654C /* Assets */,
 				F1ABAE281CC8E1D200123FE4 /* ViewController.swift */,
-				F1ABAE2A1CC8E1D200123FE4 /* Main.storyboard */,
-				F1ABAE301CC8E1D200123FE4 /* Assets.xcassets */,
-				F1ABAE321CC8E1D200123FE4 /* LaunchScreen.storyboard */,
-				F1ABAE351CC8E1D200123FE4 /* Info.plist */,
+				F17F390F1CCF942D00B4654C /* LoginTableViewController.swift */,
+				F17F39111CCFA83B00B4654C /* RegistrationTableViewController.swift */,
+				F17F39271CCFE4B100B4654C /* TimeTableViewController.swift */,
+				F17F392A1CCFE90C00B4654C /* SettingsTableViewController.swift */,
+				F17F39191CCFE00500B4654C /* MenuController.swift */,
+				F17F392C1CCFEA7200B4654C /* MusicViewController.swift */,
+				F17F392E1CCFEB5700B4654C /* PhotoTableViewController.swift */,
+				F17F39291CCFE66D00B4654C /* App Delegate */,
 				F1ABAE2D1CC8E1D200123FE4 /* MyLife.xcdatamodeld */,
 			);
 			path = MyLife;
@@ -190,6 +273,7 @@
 		F1ABAE1B1CC8E1D200123FE4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = mipt;
 				TargetAttributes = {
@@ -259,8 +343,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1ABAE291CC8E1D200123FE4 /* ViewController.swift in Sources */,
+				F17F391A1CCFE00500B4654C /* MenuController.swift in Sources */,
+				F17F39101CCF942D00B4654C /* LoginTableViewController.swift in Sources */,
+				F17F39201CCFE27500B4654C /* SettingsMenuCell.swift in Sources */,
+				F17F39241CCFE29E00B4654C /* MusicMenuCell.swift in Sources */,
+				F17F39261CCFE2C900B4654C /* PhotoMenuCell.swift in Sources */,
+				F17F392D1CCFEA7300B4654C /* MusicViewController.swift in Sources */,
+				F17F392B1CCFE90C00B4654C /* SettingsTableViewController.swift in Sources */,
+				F17F39281CCFE4B100B4654C /* TimeTableViewController.swift in Sources */,
 				F1ABAE271CC8E1D200123FE4 /* AppDelegate.swift in Sources */,
+				F17F392F1CCFEB5700B4654C /* PhotoTableViewController.swift in Sources */,
+				F17F39121CCFA83B00B4654C /* RegistrationTableViewController.swift in Sources */,
 				F1ABAE2F1CC8E1D200123FE4 /* MyLife.xcdatamodeld in Sources */,
+				F17F391E1CCFE25B00B4654C /* TimetableMenuCell.swift in Sources */,
+				F17F39161CCFDCD400B4654C /* SWRevealViewController.m in Sources */,
+				F17F39221CCFE28800B4654C /* UserInfoMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,10 +499,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MyLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mipt.MyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyLife/MyLife-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -413,10 +513,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MyLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mipt.MyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyLife/MyLife-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -487,6 +589,7 @@
 				F1ABAE501CC8E1D200123FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1ABAE511CC8E1D200123FE4 /* Build configuration list for PBXNativeTarget "MyLifeTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +598,7 @@
 				F1ABAE531CC8E1D200123FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F1ABAE541CC8E1D200123FE4 /* Build configuration list for PBXNativeTarget "MyLifeUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +607,7 @@
 				F1ABAE561CC8E1D200123FE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
