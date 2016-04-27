@@ -20,6 +20,18 @@
 		F17F392B1CCFE90C00B4654C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F392A1CCFE90C00B4654C /* SettingsTableViewController.swift */; };
 		F17F392D1CCFEA7300B4654C /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F392C1CCFEA7200B4654C /* MusicViewController.swift */; };
 		F17F392F1CCFEB5700B4654C /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F392E1CCFEB5700B4654C /* PhotoTableViewController.swift */; };
+		F17F39331CD02B0D00B4654C /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39321CD02B0D00B4654C /* PhotoTableViewCell.swift */; };
+		F17F393D1CD02BE600B4654C /* ImageRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F393C1CD02BE600B4654C /* ImageRecord.swift */; };
+		F17F39401CD02D9300B4654C /* ImageOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F393F1CD02D9300B4654C /* ImageOperator.swift */; };
+		F17F39421CD02EDC00B4654C /* ImageDownloadingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39411CD02EDC00B4654C /* ImageDownloadingOperation.swift */; };
+		F17F39451CD0304700B4654C /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39441CD0304700B4654C /* ImageDownloader.swift */; };
+		F17F39471CD0309900B4654C /* ImageOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39461CD0309900B4654C /* ImageOperationProtocol.swift */; };
+		F17F39491CD0377600B4654C /* ImageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39481CD0377500B4654C /* ImageState.swift */; };
+		F17F394B1CD0379F00B4654C /* ShowInFullScreenSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F394A1CD0379F00B4654C /* ShowInFullScreenSegue.swift */; };
+		F17F394D1CD03AB600B4654C /* ImageRenderingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F394C1CD03AB600B4654C /* ImageRenderingOperation.swift */; };
+		F17F39511CD03CF800B4654C /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39501CD03CF800B4654C /* ImageRenderer.swift */; };
+		F17F39551CD0427000B4654C /* downloadingList.txt in Resources */ = {isa = PBXBuildFile; fileRef = F17F39541CD0427000B4654C /* downloadingList.txt */; };
+		F17F39571CD04B8C00B4654C /* ImageInFullSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39561CD04B8C00B4654C /* ImageInFullSizeViewController.swift */; };
 		F1ABAE271CC8E1D200123FE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABAE261CC8E1D200123FE4 /* AppDelegate.swift */; };
 		F1ABAE291CC8E1D200123FE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABAE281CC8E1D200123FE4 /* ViewController.swift */; };
 		F1ABAE2C1CC8E1D200123FE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABAE2A1CC8E1D200123FE4 /* Main.storyboard */; };
@@ -63,6 +75,18 @@
 		F17F392A1CCFE90C00B4654C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		F17F392C1CCFEA7200B4654C /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		F17F392E1CCFEB5700B4654C /* PhotoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		F17F39321CD02B0D00B4654C /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		F17F393C1CD02BE600B4654C /* ImageRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRecord.swift; sourceTree = "<group>"; };
+		F17F393F1CD02D9300B4654C /* ImageOperator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOperator.swift; sourceTree = "<group>"; };
+		F17F39411CD02EDC00B4654C /* ImageDownloadingOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloadingOperation.swift; sourceTree = "<group>"; };
+		F17F39441CD0304700B4654C /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		F17F39461CD0309900B4654C /* ImageOperationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOperationProtocol.swift; sourceTree = "<group>"; };
+		F17F39481CD0377500B4654C /* ImageState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageState.swift; sourceTree = "<group>"; };
+		F17F394A1CD0379F00B4654C /* ShowInFullScreenSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowInFullScreenSegue.swift; sourceTree = "<group>"; };
+		F17F394C1CD03AB600B4654C /* ImageRenderingOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRenderingOperation.swift; sourceTree = "<group>"; };
+		F17F39501CD03CF800B4654C /* ImageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRenderer.swift; sourceTree = "<group>"; };
+		F17F39541CD0427000B4654C /* downloadingList.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = downloadingList.txt; sourceTree = SOURCE_ROOT; };
+		F17F39561CD04B8C00B4654C /* ImageInFullSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageInFullSizeViewController.swift; sourceTree = "<group>"; };
 		F1ABAE231CC8E1D200123FE4 /* MyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1ABAE261CC8E1D200123FE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1ABAE281CC8E1D200123FE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +141,7 @@
 		F17F39181CCFDD3600B4654C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F17F39541CD0427000B4654C /* downloadingList.txt */,
 				F1ABAE301CC8E1D200123FE4 /* Assets.xcassets */,
 				F1ABAE321CC8E1D200123FE4 /* LaunchScreen.storyboard */,
 			);
@@ -126,6 +151,7 @@
 		F17F391B1CCFE22600B4654C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F17F39431CD02EE600B4654C /* Photo */,
 				F17F391C1CCFE23500B4654C /* Menu */,
 			);
 			name = View;
@@ -148,9 +174,121 @@
 			children = (
 				F1ABAE351CC8E1D200123FE4 /* Info.plist */,
 				F1ABAE2A1CC8E1D200123FE4 /* Main.storyboard */,
+				F1ABAE281CC8E1D200123FE4 /* ViewController.swift */,
 				F1ABAE261CC8E1D200123FE4 /* AppDelegate.swift */,
 			);
 			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		F17F39341CD02B2300B4654C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F17F393A1CD02B8400B4654C /* Photo */,
+				F17F39391CD02B7A00B4654C /* Music */,
+				F17F39381CD02B6F00B4654C /* Menu */,
+				F17F39371CD02B5400B4654C /* Settings */,
+				F17F39361CD02B4400B4654C /* TimeTable */,
+				F17F39351CD02B3400B4654C /* Registration */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F17F39351CD02B3400B4654C /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				F17F390F1CCF942D00B4654C /* LoginTableViewController.swift */,
+				F17F39111CCFA83B00B4654C /* RegistrationTableViewController.swift */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
+		F17F39361CD02B4400B4654C /* TimeTable */ = {
+			isa = PBXGroup;
+			children = (
+				F17F39271CCFE4B100B4654C /* TimeTableViewController.swift */,
+			);
+			name = TimeTable;
+			sourceTree = "<group>";
+		};
+		F17F39371CD02B5400B4654C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F17F392A1CCFE90C00B4654C /* SettingsTableViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		F17F39381CD02B6F00B4654C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F17F39191CCFE00500B4654C /* MenuController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		F17F39391CD02B7A00B4654C /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				F17F392C1CCFEA7200B4654C /* MusicViewController.swift */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		F17F393A1CD02B8400B4654C /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				F17F39321CD02B0D00B4654C /* PhotoTableViewCell.swift */,
+				F17F392E1CCFEB5700B4654C /* PhotoTableViewController.swift */,
+				F17F39561CD04B8C00B4654C /* ImageInFullSizeViewController.swift */,
+			);
+			name = Photo;
+			sourceTree = "<group>";
+		};
+		F17F393B1CD02BCF00B4654C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F17F393E1CD02D7F00B4654C /* Photo */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F17F393E1CD02D7F00B4654C /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				F17F394F1CD03AC800B4654C /* Rendering */,
+				F17F394E1CD03ABD00B4654C /* Download */,
+			);
+			name = Photo;
+			sourceTree = "<group>";
+		};
+		F17F39431CD02EE600B4654C /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				F17F393F1CD02D9300B4654C /* ImageOperator.swift */,
+				F17F39481CD0377500B4654C /* ImageState.swift */,
+				F17F39461CD0309900B4654C /* ImageOperationProtocol.swift */,
+				F17F393C1CD02BE600B4654C /* ImageRecord.swift */,
+				F17F394A1CD0379F00B4654C /* ShowInFullScreenSegue.swift */,
+			);
+			name = Photo;
+			sourceTree = "<group>";
+		};
+		F17F394E1CD03ABD00B4654C /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				F17F39441CD0304700B4654C /* ImageDownloader.swift */,
+				F17F39411CD02EDC00B4654C /* ImageDownloadingOperation.swift */,
+			);
+			name = Download;
+			sourceTree = "<group>";
+		};
+		F17F394F1CD03AC800B4654C /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				F17F394C1CD03AB600B4654C /* ImageRenderingOperation.swift */,
+				F17F39501CD03CF800B4654C /* ImageRenderer.swift */,
+			);
+			name = Rendering;
 			sourceTree = "<group>";
 		};
 		F1ABAE1A1CC8E1D200123FE4 = {
@@ -176,17 +314,11 @@
 		F1ABAE251CC8E1D200123FE4 /* MyLife */ = {
 			isa = PBXGroup;
 			children = (
+				F17F393B1CD02BCF00B4654C /* Model */,
 				F17F391B1CCFE22600B4654C /* View */,
 				F17F39171CCFDCF400B4654C /* SWRevealViewController */,
 				F17F39181CCFDD3600B4654C /* Assets */,
-				F1ABAE281CC8E1D200123FE4 /* ViewController.swift */,
-				F17F390F1CCF942D00B4654C /* LoginTableViewController.swift */,
-				F17F39111CCFA83B00B4654C /* RegistrationTableViewController.swift */,
-				F17F39271CCFE4B100B4654C /* TimeTableViewController.swift */,
-				F17F392A1CCFE90C00B4654C /* SettingsTableViewController.swift */,
-				F17F39191CCFE00500B4654C /* MenuController.swift */,
-				F17F392C1CCFEA7200B4654C /* MusicViewController.swift */,
-				F17F392E1CCFEB5700B4654C /* PhotoTableViewController.swift */,
+				F17F39341CD02B2300B4654C /* Controller */,
 				F17F39291CCFE66D00B4654C /* App Delegate */,
 				F1ABAE2D1CC8E1D200123FE4 /* MyLife.xcdatamodeld */,
 			);
@@ -279,6 +411,7 @@
 				TargetAttributes = {
 					F1ABAE221CC8E1D200123FE4 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = D562KL9N8D;
 					};
 					F1ABAE391CC8E1D200123FE4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -318,6 +451,7 @@
 				F1ABAE341CC8E1D200123FE4 /* LaunchScreen.storyboard in Resources */,
 				F1ABAE311CC8E1D200123FE4 /* Assets.xcassets in Resources */,
 				F1ABAE2C1CC8E1D200123FE4 /* Main.storyboard in Resources */,
+				F17F39551CD0427000B4654C /* downloadingList.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,18 +479,29 @@
 				F1ABAE291CC8E1D200123FE4 /* ViewController.swift in Sources */,
 				F17F391A1CCFE00500B4654C /* MenuController.swift in Sources */,
 				F17F39101CCF942D00B4654C /* LoginTableViewController.swift in Sources */,
+				F17F394D1CD03AB600B4654C /* ImageRenderingOperation.swift in Sources */,
+				F17F39511CD03CF800B4654C /* ImageRenderer.swift in Sources */,
 				F17F39201CCFE27500B4654C /* SettingsMenuCell.swift in Sources */,
+				F17F39491CD0377600B4654C /* ImageState.swift in Sources */,
 				F17F39241CCFE29E00B4654C /* MusicMenuCell.swift in Sources */,
 				F17F39261CCFE2C900B4654C /* PhotoMenuCell.swift in Sources */,
 				F17F392D1CCFEA7300B4654C /* MusicViewController.swift in Sources */,
+				F17F39471CD0309900B4654C /* ImageOperationProtocol.swift in Sources */,
 				F17F392B1CCFE90C00B4654C /* SettingsTableViewController.swift in Sources */,
+				F17F394B1CD0379F00B4654C /* ShowInFullScreenSegue.swift in Sources */,
 				F17F39281CCFE4B100B4654C /* TimeTableViewController.swift in Sources */,
 				F1ABAE271CC8E1D200123FE4 /* AppDelegate.swift in Sources */,
+				F17F393D1CD02BE600B4654C /* ImageRecord.swift in Sources */,
+				F17F39331CD02B0D00B4654C /* PhotoTableViewCell.swift in Sources */,
 				F17F392F1CCFEB5700B4654C /* PhotoTableViewController.swift in Sources */,
+				F17F39571CD04B8C00B4654C /* ImageInFullSizeViewController.swift in Sources */,
 				F17F39121CCFA83B00B4654C /* RegistrationTableViewController.swift in Sources */,
 				F1ABAE2F1CC8E1D200123FE4 /* MyLife.xcdatamodeld in Sources */,
 				F17F391E1CCFE25B00B4654C /* TimetableMenuCell.swift in Sources */,
+				F17F39451CD0304700B4654C /* ImageDownloader.swift in Sources */,
+				F17F39421CD02EDC00B4654C /* ImageDownloadingOperation.swift in Sources */,
 				F17F39161CCFDCD400B4654C /* SWRevealViewController.m in Sources */,
+				F17F39401CD02D9300B4654C /* ImageOperator.swift in Sources */,
 				F17F39221CCFE28800B4654C /* UserInfoMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,10 +645,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mipt.MyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyLife/MyLife-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -514,10 +662,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = MyLife/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mipt.MyLife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyLife/MyLife-Bridging-Header.h";
 			};
 			name = Release;

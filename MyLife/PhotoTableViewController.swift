@@ -13,9 +13,11 @@ class PhotoTableViewController: UITableViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    var items: [String] = ["Photo1", "Photo2", "Photo3"]
-    
     @IBOutlet weak var photoTableView: UITableView!
+    
+    var imagesLinks: [String] = []
+    var imageDownloader: ImageDownloader!
+    static var downloadedImages = [NSIndexPath : ImageRecord]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +26,8 @@ class PhotoTableViewController: UITableViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
-        self.photoTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        let path = NSBundle.mainBundle().pathForResource("downloadingList", ofType: "txt")
+        self.imagesLinks = (try! String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)).componentsSeparatedByString("\n")
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,19 +36,35 @@ class PhotoTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.items.count;
+        return imagesLinks.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = self.photoTableView.dequeueReusableCellWithIdentifier("firstCell") as UITableViewCell!
-        cell.textLabel?.text = self.items[indexPath.row]
+        
+        print("cellForRow: ", indexPath.row + 1)
+        let cell : PhotoTableViewCell = tableView.dequeueReusableCellWithIdentifier("firstCell", forIndexPath: indexPath) as! PhotoTableViewCell
+        
+        if (PhotoTableViewController.downloadedImages[indexPath] == nil) {
+            PhotoTableViewController.downloadedImages[indexPath] = cell.imageRecord
+            cell.startUpdatingCell(self.imagesLinks[indexPath.row])
+        } else {
+            cell.imageRecord = PhotoTableViewController.downloadedImages[indexPath]
+            cell.photoImageView.image = cell.imageRecord.imageSmall
+        }
+        
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    }
-    
-    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 60 + CGFloat(indexPath.row * 5)
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if ( segue.identifier == ShowInFullScreenSegue) {
+            let cell = sender as! PhotoTableViewCell
+            let destinationVC = segue.destinationViewController as! ImageInFullSizeViewController
+            let indicator = cell.accessoryView as! UIActivityIndicatorView
+            let imageView : UIImageView? = sender?.imageView
+            if (imageView != nil) {
+                imageView?.addSubview(indicator)
+                destinationVC.imageRecord = cell.imageRecord
+            }
+        }
     }
 }

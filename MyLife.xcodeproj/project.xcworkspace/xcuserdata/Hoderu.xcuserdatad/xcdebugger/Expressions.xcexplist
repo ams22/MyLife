@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PhotoTableViewCell.fetchedImageRecord(ImageRecord) -&gt; ():PhotoTableViewCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.window?.rootViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PhotoTableViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():PhotoTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "segue.destinationViewController">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

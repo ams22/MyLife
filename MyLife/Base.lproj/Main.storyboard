@@ -874,7 +874,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MYLIFEEE TIMETABLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jj-6i-9M1">
                                 <rect key="frame" x="44" y="146" width="325" height="177"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -924,7 +924,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MUSIC MY LIFE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm6-cd-miy">
                                 <rect key="frame" x="196" y="179" width="229" height="119"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -981,34 +981,27 @@
         <scene sceneID="XPB-Ue-87Z">
             <objects>
                 <tableViewController storyboardIdentifier="photoTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rOH-8q-AOM" customClass="PhotoTableViewController" customModule="MyLife" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PS7-JM-1Dc">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="28" sectionFooterHeight="28" id="PS7-JM-1Dc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstCell" textLabel="TJI-c8-t1H" detailTextLabel="jQ0-E1-4le" style="IBUITableViewCellStyleSubtitle" id="0zP-tm-I46">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="firstCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstCell" rowHeight="130" id="0zP-tm-I46" customClass="PhotoTableViewCell" customModule="MyLife" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0zP-tm-I46" id="0wS-wU-hY7">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TJI-c8-t1H">
-                                            <rect key="frame" x="15" y="5" width="32" height="20"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jQ0-E1-4le">
-                                            <rect key="frame" x="15" y="25" width="41" height="14"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ach-vM-A32">
+                                            <rect key="frame" x="0.0" y="0.0" width="229" height="129"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="photoImageView" destination="ach-vM-A32" id="IgB-my-Uoz"/>
+                                    <segue destination="uSu-zg-YW2" kind="showDetail" identifier="showInFullScreenSegue" id="X2E-Sh-Jke"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -1028,6 +1021,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rno-lz-KUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4315" y="2433"/>
+        </scene>
+        <!--Image In Full Size View Controller-->
+        <scene sceneID="uU3-V3-C7B">
+            <objects>
+                <viewController id="uSu-zg-YW2" customClass="ImageInFullSizeViewController" customModule="MyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4EW-ib-uvy"/>
+                        <viewControllerLayoutGuide type="bottom" id="KHm-3Q-lif"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0HJ-aS-Q6R">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzD-dz-bLH">
+                                <rect key="frame" x="129" y="140" width="343" height="319"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-25-86Q">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="A3c-DP-ifh">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="ONA-Cz-a8x">
+                                            <connections>
+                                                <segue destination="rOH-8q-AOM" kind="show" id="247-58-Vot"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageInFullSize" destination="yzD-dz-bLH" id="UDI-hf-dqZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="skZ-mY-T0T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5083" y="2433"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dbN-fd-7bj">
@@ -1049,7 +1080,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Maly_logotip_V-2" width="32" height="32"/>
+        <image name="Maly_logotip_V-2" width="16" height="16"/>
         <image name="menuItem" width="64" height="64"/>
         <image name="menuItemSmall" width="64" height="64"/>
         <image name="second" width="256" height="256"/>
@@ -1057,5 +1088,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="Iyi-Yg-m7b"/>
         <segue reference="5zr-mL-7Xo"/>
+        <segue reference="247-58-Vot"/>
     </inferredMetricsTieBreakers>
 </document>
