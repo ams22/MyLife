@@ -16,7 +16,6 @@
 		F17F39221CCFE28800B4654C /* UserInfoMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39211CCFE28800B4654C /* UserInfoMenuCell.swift */; };
 		F17F39241CCFE29E00B4654C /* MusicMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39231CCFE29E00B4654C /* MusicMenuCell.swift */; };
 		F17F39261CCFE2C900B4654C /* PhotoMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39251CCFE2C900B4654C /* PhotoMenuCell.swift */; };
-		F17F39281CCFE4B100B4654C /* TimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39271CCFE4B100B4654C /* TimeTableViewController.swift */; };
 		F17F392B1CCFE90C00B4654C /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F392A1CCFE90C00B4654C /* SettingsTableViewController.swift */; };
 		F17F392D1CCFEA7300B4654C /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F392C1CCFEA7200B4654C /* MusicViewController.swift */; };
 		F17F392F1CCFEB5700B4654C /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F392E1CCFEB5700B4654C /* PhotoTableViewController.swift */; };
@@ -40,6 +39,7 @@
 		F1ABAE341CC8E1D200123FE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABAE321CC8E1D200123FE4 /* LaunchScreen.storyboard */; };
 		F1ABAE3F1CC8E1D200123FE4 /* MyLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABAE3E1CC8E1D200123FE4 /* MyLifeTests.swift */; };
 		F1ABAE4A1CC8E1D200123FE4 /* MyLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABAE491CC8E1D200123FE4 /* MyLifeUITests.swift */; };
+		F1B4E08F1CD3DB930089F13D /* TimeTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4E08E1CD3DB930089F13D /* TimeTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,6 @@
 		F17F39211CCFE28800B4654C /* UserInfoMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoMenuCell.swift; sourceTree = "<group>"; };
 		F17F39231CCFE29E00B4654C /* MusicMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicMenuCell.swift; sourceTree = "<group>"; };
 		F17F39251CCFE2C900B4654C /* PhotoMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMenuCell.swift; sourceTree = "<group>"; };
-		F17F39271CCFE4B100B4654C /* TimeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableViewController.swift; sourceTree = "<group>"; };
 		F17F392A1CCFE90C00B4654C /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		F17F392C1CCFEA7200B4654C /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		F17F392E1CCFEB5700B4654C /* PhotoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +100,7 @@
 		F1ABAE451CC8E1D200123FE4 /* MyLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1ABAE491CC8E1D200123FE4 /* MyLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLifeUITests.swift; sourceTree = "<group>"; };
 		F1ABAE4B1CC8E1D200123FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B4E08E1CD3DB930089F13D /* TimeTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,7 +205,7 @@
 		F17F39361CD02B4400B4654C /* TimeTable */ = {
 			isa = PBXGroup;
 			children = (
-				F17F39271CCFE4B100B4654C /* TimeTableViewController.swift */,
+				F1B4E08E1CD3DB930089F13D /* TimeTableTableViewController.swift */,
 			);
 			name = TimeTable;
 			sourceTree = "<group>";
@@ -487,9 +487,9 @@
 				F17F39261CCFE2C900B4654C /* PhotoMenuCell.swift in Sources */,
 				F17F392D1CCFEA7300B4654C /* MusicViewController.swift in Sources */,
 				F17F39471CD0309900B4654C /* ImageOperationProtocol.swift in Sources */,
+				F1B4E08F1CD3DB930089F13D /* TimeTableTableViewController.swift in Sources */,
 				F17F392B1CCFE90C00B4654C /* SettingsTableViewController.swift in Sources */,
 				F17F394B1CD0379F00B4654C /* ShowInFullScreenSegue.swift in Sources */,
-				F17F39281CCFE4B100B4654C /* TimeTableViewController.swift in Sources */,
 				F1ABAE271CC8E1D200123FE4 /* AppDelegate.swift in Sources */,
 				F17F393D1CD02BE600B4654C /* ImageRecord.swift in Sources */,
 				F17F39331CD02B0D00B4654C /* PhotoTableViewCell.swift in Sources */,

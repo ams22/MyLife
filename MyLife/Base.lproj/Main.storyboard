@@ -859,35 +859,43 @@
             </objects>
             <point key="canvasLocation" x="2811" y="968"/>
         </scene>
-        <!--Time Table View Controller-->
-        <scene sceneID="tR6-ZI-QmI">
+        <!--Time Table Table View Controller-->
+        <scene sceneID="r03-Nz-SR5">
             <objects>
-                <viewController storyboardIdentifier="timeTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HG8-Lt-VEO" customClass="TimeTableViewController" customModule="MyLife" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="O1D-M3-Dne"/>
-                        <viewControllerLayoutGuide type="bottom" id="Lgl-5h-dE8"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="mdS-m5-RJa">
+                <tableViewController storyboardIdentifier="timeTableTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p75-6T-Yrl" customClass="TimeTableTableViewController" customModule="MyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kGy-Ly-RYM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MYLIFEEE TIMETABLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Jj-6i-9M1">
-                                <rect key="frame" x="44" y="146" width="325" height="177"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="lki-bf-zLZ">
-                        <barButtonItem key="leftBarButtonItem" image="menuItemSmall" id="lLr-XH-CnH" userLabel="Menu Button"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="97k-dD-awL">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="97k-dD-awL" id="Xd0-Br-S0y">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="p75-6T-Yrl" id="fD7-Lf-d95"/>
+                            <outlet property="delegate" destination="p75-6T-Yrl" id="osA-Ex-sQr"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="NAg-ED-eJE">
+                        <barButtonItem key="leftBarButtonItem" image="menuItemSmall" id="xSs-Zq-949"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wtA-ta-FxF">
+                            <connections>
+                                <action selector="addPlan:" destination="p75-6T-Yrl" id="zaG-9D-RnX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="menuButton" destination="lLr-XH-CnH" id="Qwh-pd-5Xf"/>
+                        <outlet property="menuButton" destination="xSs-Zq-949" id="GwA-tM-VVc"/>
+                        <outlet property="timeTable" destination="kGy-Ly-RYM" id="M54-fA-GAI"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8eS-hz-Y1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cpr-MC-WBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4315" y="220"/>
         </scene>
@@ -921,14 +929,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MUSIC MY LIFE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm6-cd-miy">
-                                <rect key="frame" x="196" y="179" width="229" height="119"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUSIC MY LIFE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vm6-cd-miy">
+                                <rect key="frame" x="186" y="280" width="229" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vm6-cd-miy" firstAttribute="leading" secondItem="TeX-WH-Ymy" secondAttribute="leadingMargin" constant="166" id="5Do-Xd-4qx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vm6-cd-miy" secondAttribute="trailing" constant="165" id="5Fv-s4-Iwv"/>
+                            <constraint firstItem="vm6-cd-miy" firstAttribute="centerY" secondItem="TeX-WH-Ymy" secondAttribute="centerY" id="JbV-Io-uDg"/>
+                            <constraint firstItem="vm6-cd-miy" firstAttribute="centerX" secondItem="TeX-WH-Ymy" secondAttribute="centerX" id="YFR-Lj-55V"/>
+                            <constraint firstItem="vm6-cd-miy" firstAttribute="width" secondItem="TeX-WH-Ymy" secondAttribute="width" id="cqX-ZD-bnp"/>
+                            <constraint firstItem="vm6-cd-miy" firstAttribute="centerX" secondItem="TeX-WH-Ymy" secondAttribute="centerX" id="tB4-yO-Hep"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5Do-Xd-4qx"/>
+                                <exclude reference="5Fv-s4-Iwv"/>
+                                <exclude reference="YFR-Lj-55V"/>
+                                <exclude reference="cqX-ZD-bnp"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="l84-Pm-lhl">
                         <barButtonItem key="leftBarButtonItem" image="menuItem" id="ESi-9S-cKj"/>
@@ -952,7 +976,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="HG8-Lt-VEO" kind="relationship" relationship="rootViewController" id="kAI-Xl-xIf"/>
+                        <segue destination="p75-6T-Yrl" kind="relationship" relationship="rootViewController" id="zwg-2j-18q"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hS-aw-9Ls" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1034,10 +1058,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yzD-dz-bLH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yzD-dz-bLH">
                                 <rect key="frame" x="129" y="140" width="343" height="319"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="ZbS-lf-Fkw"/>
+                                </constraints>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-25-86Q">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-25-86Q">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="A3c-DP-ifh">
@@ -1051,6 +1078,14 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yzD-dz-bLH" firstAttribute="centerX" secondItem="Pp8-25-86Q" secondAttribute="centerX" id="BeX-L1-RnG"/>
+                            <constraint firstItem="yzD-dz-bLH" firstAttribute="centerX" secondItem="0HJ-aS-Q6R" secondAttribute="centerX" id="RNz-QA-7Qs"/>
+                            <constraint firstItem="yzD-dz-bLH" firstAttribute="top" secondItem="Pp8-25-86Q" secondAttribute="bottom" constant="96" id="SKn-Yk-Eus"/>
+                            <constraint firstItem="Pp8-25-86Q" firstAttribute="leading" secondItem="0HJ-aS-Q6R" secondAttribute="leading" id="adX-XW-mDj"/>
+                            <constraint firstItem="KHm-3Q-lif" firstAttribute="top" secondItem="yzD-dz-bLH" secondAttribute="bottom" constant="141" id="lZX-mj-EA1"/>
+                            <constraint firstItem="yzD-dz-bLH" firstAttribute="centerY" secondItem="0HJ-aS-Q6R" secondAttribute="centerY" id="pQr-Dd-99S"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageInFullSize" destination="yzD-dz-bLH" id="UDI-hf-dqZ"/>

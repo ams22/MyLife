@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TimeTableViewController: UIViewController {
+class TimeTableTableViewController: UIViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
