@@ -57,12 +57,28 @@ class VKAuthorizationTableViewController: UITableViewController {
                     keys.append("\(iter)")
                 }
             
-                self.id.text = result[keys.indexOf("id")!]
-                self.name.text = result[keys.indexOf("first_name")!]
-                self.surname.text = result[keys.indexOf("last_name")!]
-                let imageData = NSData(contentsOfURL: NSURL(string: result[keys.indexOf("photo_400_orig")!])!)
-                let image = UIImage(data: imageData!)
-                self.avatar.image = image
+                if ((keys.indexOf("id")) != nil) {
+                    self.id.text = result[keys.indexOf("id")!]
+                } else {
+                    self.id.text = "Not found"
+                }
+                if (keys.indexOf("first_name") != nil) {
+                    self.name.text = result[keys.indexOf("first_name")!]
+                } else {
+                    self.name.text = "Not found"
+                }
+                if ((keys.indexOf("last_name")) != nil) {
+                    self.surname.text = result[keys.indexOf("last_name")!]
+                } else {
+                    self.name.text = "Not found"
+                }
+                if ((keys.indexOf("photo_400_orig")) != nil) {
+                    let imageData = NSData(contentsOfURL: NSURL(string: result[keys.indexOf("photo_400_orig")!])!)
+                    let image = UIImage(data: imageData!)
+                    self.avatar.image = image
+                } else {
+                    self.avatar.image = UIImage(named: "notFound")
+                }
             }, failure: { (sessionDataTask, error) in
                 print(error)
         })

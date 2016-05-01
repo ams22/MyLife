@@ -6,6 +6,9 @@
          contextName = "VKAuthorizationTableViewController.(openVK() -&gt; ()).(closure #1):VKAuthorizationTableViewController.swift">
          <PersistentStrings>
             <PersistentString
+               value = "keys.indexOf(&quot;photo_400_orig&quot;)">
+            </PersistentString>
+            <PersistentString
                value = "result[3]">
             </PersistentString>
          </PersistentStrings>
