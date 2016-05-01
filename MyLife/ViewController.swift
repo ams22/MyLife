@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import VK_ios_sdk
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        VKSdk.initializeWithAppId("5442423")
     }
     
     override func didReceiveMemoryWarning() {

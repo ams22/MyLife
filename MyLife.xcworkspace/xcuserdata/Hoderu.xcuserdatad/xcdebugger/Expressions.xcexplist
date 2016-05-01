@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "VKAuthorizationTableViewController.(openVK() -&gt; ()).(closure #1):VKAuthorizationTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "result[3]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MusicViewController.(getToken(AnyObject) -&gt; ()).(closure #1):MusicViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response?.allHeaderFields">
+            </PersistentString>
+            <PersistentString
+               value = "sessionManager.requestSerializer.HTTPRequestHeaders">
+            </PersistentString>
+            <PersistentString
+               value = "response?.HTTPRequestHeaders">
+            </PersistentString>
+            <PersistentString
+               value = "response?.allHTTPHeaderFields">
+            </PersistentString>
+            <PersistentString
+               value = "sessionDataTask">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MusicViewController.(openVK(AnyObject) -&gt; ()).(closure #1):MusicViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "iter.stringValue">
+            </PersistentString>
+            <PersistentString
+               value = "iter.string">
+            </PersistentString>
+            <PersistentString
+               value = "dataString[&quot;response&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "myName[&quot;response&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginTableViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():LoginTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "GlobalStorage.userID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

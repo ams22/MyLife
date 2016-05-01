@@ -6,7 +6,31 @@
          contextName = "PhotoTableViewCell.fetchedImageRecord(ImageRecord) -&gt; ():PhotoTableViewCell.swift">
          <PersistentStrings>
             <PersistentString
+               value = "vc.tableView">
+            </PersistentString>
+            <PersistentString
                value = "self.window?.rootViewController">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath">
+            </PersistentString>
+            <PersistentString
+               value = "self.window?.rootViewController!.view">
+            </PersistentString>
+            <PersistentString
+               value = "vc.tableView.indexPathForSelectedRow">
+            </PersistentString>
+            <PersistentString
+               value = "self.window?.rootViewController?.isKindOfClass(PhotoTableViewController)">
+            </PersistentString>
+            <PersistentString
+               value = "self.window?.rootViewController!.parentViewController">
+            </PersistentString>
+            <PersistentString
+               value = "vc">
+            </PersistentString>
+            <PersistentString
+               value = "self.window">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

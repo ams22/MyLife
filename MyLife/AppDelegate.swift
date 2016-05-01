@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import VK_ios_sdk
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -44,6 +45,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        VKSdk.processOpenURL(url, fromApplication: sourceApplication)
+        return true
+    }
+        
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {

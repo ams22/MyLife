@@ -3,4 +3,5 @@
 //
 
 #import "SWRevealViewController.h"
-//#import "AFNetworking/AFNetworking.h"
+#import "AFNetworking/AFNetworking.h"
+#import <VK_ios_sdk/VKSdk.h>

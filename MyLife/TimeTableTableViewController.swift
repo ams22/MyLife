@@ -127,7 +127,7 @@ class TimeTableTableViewController: UITableViewController {
         delete.backgroundColor = UIColor.redColor()
         let update = UITableViewRowAction(style: .Normal, title: "Update") { action, index in
             self.updatePlan(indexPath.row)
-            self.timeTable.reloadData()
+            //self.timeTable.reloadData()
         }
         update.backgroundColor = UIColor.grayColor()
         return [delete, update]

@@ -68,13 +68,11 @@ extension PhotoTableViewCell {
             stopDownloadingIndicator()
             self.photoImageView.image = imageRecord.imageSmall
             if (self.window?.rootViewController?.isKindOfClass(PhotoTableViewController) != nil) {
-//                let parentVC = self.window?.rootViewController as! PhotoTableViewController
-//                let indexPath = parentVC.photoTableView.indexPathForCell(self)
-//                if (indexPath != nil) {
-//                    print("Adding to ", terminator: "")
-//                    print(indexPath!.row)
-//                    PhotoTableViewController.downloadedImages[indexPath!] = imageRecord
-//                }
+                let view = self.superview?.superview as! UITableView
+                let indexPath = view.indexPathForCell(self)
+                if (indexPath != nil) {
+                    PhotoTableViewController.downloadedImages[indexPath!] = imageRecord
+                }
             }
             break
         default:

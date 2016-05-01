@@ -13,8 +13,6 @@ class PhotoTableViewController: UITableViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
-    @IBOutlet weak var photoTableView: UITableView!
-    
     var imagesLinks: [String] = []
     var imageDownloader: ImageDownloader!
     static var downloadedImages = [NSIndexPath : ImageRecord]()
@@ -50,8 +48,8 @@ class PhotoTableViewController: UITableViewController {
         } else {
             cell.imageRecord = PhotoTableViewController.downloadedImages[indexPath]
             cell.photoImageView.image = cell.imageRecord.imageSmall
+            cell.stopDownloadingIndicator()
         }
-        
         return cell
     }
     
