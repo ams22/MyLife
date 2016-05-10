@@ -11,5 +11,6 @@ import Foundation
 struct GlobalStorage {
     static var token = ""
     static var userID = ""
+    static var answerTuple = ([String: String](), UIImage())
     //"56820028"
 }

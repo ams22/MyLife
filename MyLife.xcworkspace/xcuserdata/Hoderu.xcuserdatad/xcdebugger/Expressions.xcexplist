@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "LoginTableViewController.Regex.test(String) -&gt; Bool:LoginTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "matches.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "VKAuthorizationTableViewController.(openVK() -&gt; ()).(closure #1):VKAuthorizationTableViewController.swift">
          <PersistentStrings>
             <PersistentString

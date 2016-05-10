@@ -19,12 +19,29 @@ class LoginTableViewController: UITableViewController {
         GlobalStorage.userID = ""
     }
     
+    func returnIncorrectInputAlertController() {
+        let incorrectInputAlert = UIAlertController(title: "Некорректный ввод", message: "Введите снова", preferredStyle: .Alert)
+        let incorrectInputOkAction = UIAlertAction(title: "Хорошо", style: .Default, handler: nil)
+        incorrectInputAlert.addAction(incorrectInputOkAction)
+        self.presentViewController(incorrectInputAlert, animated: true, completion: nil)
+    }
+    
     func alert() {
         let alert = UIAlertController(title: "Необходим ваш id", message: "Поле для ввода", preferredStyle: .Alert)
         let action = UIAlertAction(title: "Сохранить", style: .Default, handler: {
             (action: UIAlertAction) -> Void in
-            GlobalStorage.userID = alert.textFields!.first!.text!
-            self.performSegueWithIdentifier("LoginToVKTableViewController", sender: self)
+            let checkString = alert.textFields!.first!.text!
+            if (Regex("[^0-9]").test(checkString)) {
+                self.returnIncorrectInputAlertController()
+            } else {
+                let intInput = Int(checkString)
+                if (intInput == 0) {
+                    self.returnIncorrectInputAlertController()
+                } else {
+                    GlobalStorage.userID = alert.textFields!.first!.text!
+                    self.performSegueWithIdentifier("LoginToVKTableViewController", sender: self)
+                }
+            }
         })
         let cancelAction = UIAlertAction(title: "Отмена", style: .Default, handler: nil)
         alert.addTextFieldWithConfigurationHandler { (textField: UITextField) -> Void in }
@@ -37,7 +54,7 @@ class LoginTableViewController: UITableViewController {
     }
     
     @IBAction func vkRegistration(sender: AnyObject) {
-        self.performSegueWithIdentifier("LoginToVKTableViewController", sender: self)
+        //self.performSegueWithIdentifier("LoginToVKTableViewController", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

@@ -42,6 +42,8 @@
 		F1ABAE341CC8E1D200123FE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABAE321CC8E1D200123FE4 /* LaunchScreen.storyboard */; };
 		F1ABAE3F1CC8E1D200123FE4 /* MyLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABAE3E1CC8E1D200123FE4 /* MyLifeTests.swift */; };
 		F1ABAE4A1CC8E1D200123FE4 /* MyLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABAE491CC8E1D200123FE4 /* MyLifeUITests.swift */; };
+		F1B253AB1CE2167D0004E7BD /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B253AA1CE2167D0004E7BD /* Regex.swift */; };
+		F1B253AD1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B253AC1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift */; };
 		F1B4E08F1CD3DB930089F13D /* TimeTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4E08E1CD3DB930089F13D /* TimeTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -108,6 +110,8 @@
 		F1ABAE451CC8E1D200123FE4 /* MyLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1ABAE491CC8E1D200123FE4 /* MyLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLifeUITests.swift; sourceTree = "<group>"; };
 		F1ABAE4B1CC8E1D200123FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B253AA1CE2167D0004E7BD /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		F1B253AC1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = networkVKGetUserInfoWithoutToken.swift; sourceTree = "<group>"; };
 		F1B4E08E1CD3DB930089F13D /* TimeTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -275,7 +279,9 @@
 		F17F393B1CD02BCF00B4654C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F1B253AF1CE27D990004E7BD /* Regex */,
 				F17F393E1CD02D7F00B4654C /* Photo */,
+				F1B253AE1CE27D460004E7BD /* VKRegistration */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -371,6 +377,22 @@
 				F1ABAE4B1CC8E1D200123FE4 /* Info.plist */,
 			);
 			path = MyLifeUITests;
+			sourceTree = "<group>";
+		};
+		F1B253AE1CE27D460004E7BD /* VKRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				F1B253AC1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift */,
+			);
+			name = VKRegistration;
+			sourceTree = "<group>";
+		};
+		F1B253AF1CE27D990004E7BD /* Regex */ = {
+			isa = PBXGroup;
+			children = (
+				F1B253AA1CE2167D0004E7BD /* Regex.swift */,
+			);
+			name = Regex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -568,8 +590,10 @@
 				F17F39241CCFE29E00B4654C /* MusicMenuCell.swift in Sources */,
 				F1691B7D1CD663BC006F9E20 /* VKAuthorizationTableViewController.swift in Sources */,
 				F17F39261CCFE2C900B4654C /* PhotoMenuCell.swift in Sources */,
+				F1B253AB1CE2167D0004E7BD /* Regex.swift in Sources */,
 				F17F392D1CCFEA7300B4654C /* MusicViewController.swift in Sources */,
 				F17F39471CD0309900B4654C /* ImageOperationProtocol.swift in Sources */,
+				F1B253AD1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift in Sources */,
 				F1B4E08F1CD3DB930089F13D /* TimeTableTableViewController.swift in Sources */,
 				F17F392B1CCFE90C00B4654C /* SettingsTableViewController.swift in Sources */,
 				F17F394B1CD0379F00B4654C /* ShowInFullScreenSegue.swift in Sources */,
