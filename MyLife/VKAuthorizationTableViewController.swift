@@ -34,18 +34,12 @@ class VKAuthorizationTableViewController: UITableViewController {
     
     func openVK() {
         let network = networkVKGetUserInfoWithoutToken()
-        network.getUserInfoWithoutToken()
-        NSNotificationCenter.defaultCenter().addObserver(self,
-                                                         selector: #selector(VKAuthorizationTableViewController.writeUserInfo),
-                                                         name: "gotUserInfoVKRegistrationWithoutToken",
-                                                         object: nil)
-    }
-    
-    func writeUserInfo() {
-        self.id.text = GlobalStorage.answerTuple.0["id"]
-        self.name.text = GlobalStorage.answerTuple.0["first_name"]
-        self.surname.text = GlobalStorage.answerTuple.0["last_name"]
-        self.avatar.image = GlobalStorage.answerTuple.1
-        next.enabled = true
+        network.getUserInfoWithoutToken(GlobalStorage.userID, token: GlobalStorage.token, completion: {
+            self.id.text = GlobalStorage.answerTuple.0["id"]
+            self.name.text = GlobalStorage.answerTuple.0["first_name"]
+            self.surname.text = GlobalStorage.answerTuple.0["last_name"]
+            self.avatar.image = GlobalStorage.answerTuple.1
+            self.next.enabled = true
+        })
     }
 }

@@ -18,24 +18,27 @@ class networkVKGetUserInfoWithoutToken {
     let getTokenURL = "https://oauth.vk.com/authorize?client_id=5442423&scope=status&redirect_uri=http://oauth.vk.com/blank.html&display=mobile&response_type=token"
     //let getPhotosURL = "https://api.vk.com/method/photos.get?user_id=56820028&album_id=profile&v=5.52&access_token=\(token)"
     
-    func getUserInfoWithoutToken() {
+    func getUserInfoWithoutToken(userID: String, token: String, completion: () -> Void) {
         sessionManager = AFHTTPSessionManager()
         sessionManager.requestSerializer = AFJSONRequestSerializer()
         sessionManager.requestSerializer.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        loginUrlTail = "https://api.vk.com/method/users.get?user_id=\(GlobalStorage.userID)&fields=photo_400_orig&v=5.52&access_token=\(GlobalStorage.token)"
+        loginUrlTail = "https://api.vk.com/method/users.get?user_id=\(userID)&fields=photo_400_orig&v=5.52&access_token=\(token)"
         sessionManager.POST(loginUrlTail, parameters: [], progress: nil, success: { (sessionDataTask, response) in
             print("JSON response is \(response!)")
             
-            let theJSON = response as! NSDictionary
-            let respon = theJSON["response"] as! NSArray
-            let responElement = respon[0] as! NSDictionary
             var result = [String]()
-            for iter in responElement.allValues {
-                result.append("\(iter)")
-            }
             var keys = [String]()
-            for iter in responElement.allKeys {
-                keys.append("\(iter)")
+            if let theJSON = response as? NSDictionary,
+                let respon = theJSON["response"] as? NSArray,
+                 let responElement = respon[0] as? NSDictionary {
+                    for iter in responElement.allValues {
+                        result.append("\(iter)")
+                    }
+                    for iter in responElement.allKeys {
+                        keys.append("\(iter)")
+                    }
+            } else {
+                print("Json crush")
             }
             
             if ((keys.indexOf("id")) != nil) {
@@ -60,7 +63,7 @@ class networkVKGetUserInfoWithoutToken {
             } else {
                 GlobalStorage.answerTuple.1 = UIImage(named: "notFound")!
             }
-            NSNotificationCenter.defaultCenter().postNotificationName("gotUserInfoVKRegistrationWithoutToken", object: self)
+            completion()
             }, failure: { (sessionDataTask, error) in
                 print(error)
         })
