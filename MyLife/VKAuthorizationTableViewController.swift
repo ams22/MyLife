@@ -23,6 +23,7 @@ class VKAuthorizationTableViewController: UITableViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(VKAuthorizationTableViewController.updateImageFromVK), name: "imageFromVKWithoutToken", object: nil)
         self.next.enabled = false
         self.avatar.image = nil
+        GlobalStorage.checkValidNotFoundImage = false
         openVK()
     }
     

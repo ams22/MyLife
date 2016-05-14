@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AFNetworking
 
 class PhotoTableViewCell: UITableViewCell, ImageOperationProtocol {
     
@@ -44,15 +45,18 @@ class PhotoTableViewCell: UITableViewCell, ImageOperationProtocol {
     }
     
     func startDownloadingIndicator() {
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        /*UIApplication.sharedApplication().networkActivityIndicatorVisible = true
         let indicator = self.accessoryView as! UIActivityIndicatorView
-        indicator.startAnimating()
+        indicator.startAnimating()*/
+        AFNetworkActivityIndicatorManager.sharedManager().enabled = true
+        AFNetworkActivityIndicatorManager.sharedManager().incrementActivityCount()
     }
     
     func stopDownloadingIndicator() {
-        let indicator = self.accessoryView as! UIActivityIndicatorView
+        /*let indicator = self.accessoryView as! UIActivityIndicatorView
         indicator.stopAnimating()
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false*/
+        AFNetworkActivityIndicatorManager.sharedManager().decrementActivityCount()
     }
 }
 
