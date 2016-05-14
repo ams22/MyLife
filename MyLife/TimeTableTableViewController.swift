@@ -34,7 +34,7 @@ class TimeTableTableViewController: UITableViewController {
     }
     
     func savePlan(plan: String) {
-        let entity =  NSEntityDescription.entityForName("TimeTable", inManagedObjectContext:managedContext)
+        let entity =  NSEntityDescription.entityForName("Note", inManagedObjectContext:managedContext)
         let timeTable = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
         timeTable.setValue(plan, forKey: "plans")
         do {
@@ -94,7 +94,7 @@ class TimeTableTableViewController: UITableViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        let fetchRequest = NSFetchRequest(entityName: "TimeTable")
+        let fetchRequest = NSFetchRequest(entityName: "Note")
         do {
             let results = try managedContext.executeFetchRequest(fetchRequest)
             plans = results as! [NSManagedObject]

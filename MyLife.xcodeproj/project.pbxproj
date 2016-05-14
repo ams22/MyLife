@@ -42,6 +42,8 @@
 		F1ABAE341CC8E1D200123FE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABAE321CC8E1D200123FE4 /* LaunchScreen.storyboard */; };
 		F1ABAE3F1CC8E1D200123FE4 /* MyLifeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABAE3E1CC8E1D200123FE4 /* MyLifeTests.swift */; };
 		F1ABAE4A1CC8E1D200123FE4 /* MyLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ABAE491CC8E1D200123FE4 /* MyLifeUITests.swift */; };
+		F1AD9C201CE5108000E906FB /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9C1F1CE5108000E906FB /* NetworkHelper.swift */; };
+		F1AD9C221CE5F36F00E906FB /* DownloadSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1AD9C211CE5F36F00E906FB /* DownloadSessionDelegate.swift */; };
 		F1B253AB1CE2167D0004E7BD /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B253AA1CE2167D0004E7BD /* Regex.swift */; };
 		F1B253AD1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B253AC1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift */; };
 		F1B4E08F1CD3DB930089F13D /* TimeTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4E08E1CD3DB930089F13D /* TimeTableTableViewController.swift */; };
@@ -110,6 +112,8 @@
 		F1ABAE451CC8E1D200123FE4 /* MyLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1ABAE491CC8E1D200123FE4 /* MyLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLifeUITests.swift; sourceTree = "<group>"; };
 		F1ABAE4B1CC8E1D200123FE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1AD9C1F1CE5108000E906FB /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		F1AD9C211CE5F36F00E906FB /* DownloadSessionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadSessionDelegate.swift; sourceTree = "<group>"; };
 		F1B253AA1CE2167D0004E7BD /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		F1B253AC1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = networkVKGetUserInfoWithoutToken.swift; sourceTree = "<group>"; };
 		F1B4E08E1CD3DB930089F13D /* TimeTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableTableViewController.swift; sourceTree = "<group>"; };
@@ -383,6 +387,8 @@
 			isa = PBXGroup;
 			children = (
 				F1B253AC1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift */,
+				F1AD9C1F1CE5108000E906FB /* NetworkHelper.swift */,
+				F1AD9C211CE5F36F00E906FB /* DownloadSessionDelegate.swift */,
 			);
 			name = VKRegistration;
 			sourceTree = "<group>";
@@ -467,6 +473,11 @@
 					F1ABAE221CC8E1D200123FE4 = {
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = D562KL9N8D;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F1ABAE391CC8E1D200123FE4 = {
 						CreatedOnToolsVersion = 7.0;
@@ -585,6 +596,7 @@
 				F1691B7F1CD67B11006F9E20 /* GlobalStorage.swift in Sources */,
 				F17F394D1CD03AB600B4654C /* ImageRenderingOperation.swift in Sources */,
 				F17F39511CD03CF800B4654C /* ImageRenderer.swift in Sources */,
+				F1AD9C221CE5F36F00E906FB /* DownloadSessionDelegate.swift in Sources */,
 				F17F39201CCFE27500B4654C /* SettingsMenuCell.swift in Sources */,
 				F17F39491CD0377600B4654C /* ImageState.swift in Sources */,
 				F17F39241CCFE29E00B4654C /* MusicMenuCell.swift in Sources */,
@@ -603,6 +615,7 @@
 				F17F392F1CCFEB5700B4654C /* PhotoTableViewController.swift in Sources */,
 				F17F39571CD04B8C00B4654C /* ImageInFullSizeViewController.swift in Sources */,
 				F17F39121CCFA83B00B4654C /* RegistrationTableViewController.swift in Sources */,
+				F1AD9C201CE5108000E906FB /* NetworkHelper.swift in Sources */,
 				F1ABAE2F1CC8E1D200123FE4 /* MyLife.xcdatamodeld in Sources */,
 				F17F391E1CCFE25B00B4654C /* TimetableMenuCell.swift in Sources */,
 				F17F39451CD0304700B4654C /* ImageDownloader.swift in Sources */,

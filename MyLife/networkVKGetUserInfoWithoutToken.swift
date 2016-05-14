@@ -57,11 +57,11 @@ class networkVKGetUserInfoWithoutToken {
                 GlobalStorage.answerTuple.0["last_name"] = "Not found"
             }
             if ((keys.indexOf("photo_400_orig")) != nil) {
-                let imageData = NSData(contentsOfURL: NSURL(string: result[keys.indexOf("photo_400_orig")!])!)
-                let image = UIImage(data: imageData!)
-                GlobalStorage.answerTuple.1 = image!
+                let networkHelper = NetworkHelper()
+                networkHelper.getImageWithURL(result[keys.indexOf("photo_400_orig")!])
             } else {
                 GlobalStorage.answerTuple.1 = UIImage(named: "notFound")!
+                GlobalStorage.checkValidNotFoundImage = true
             }
             completion()
             }, failure: { (sessionDataTask, error) in

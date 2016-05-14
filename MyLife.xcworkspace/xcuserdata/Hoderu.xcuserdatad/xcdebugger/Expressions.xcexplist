@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "NetworkHelper.getImageWithURL(String) -&gt; ():NetworkHelper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "LoginTableViewController.Regex.test(String) -&gt; Bool:LoginTableViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -11,13 +19,19 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "VKAuthorizationTableViewController.(openVK() -&gt; ()).(closure #1):VKAuthorizationTableViewController.swift">
+         contextName = "MusicViewController.(openVK(AnyObject) -&gt; ()).(closure #1):MusicViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "keys.indexOf(&quot;photo_400_orig&quot;)">
+               value = "iter.stringValue">
             </PersistentString>
             <PersistentString
-               value = "result[3]">
+               value = "iter.string">
+            </PersistentString>
+            <PersistentString
+               value = "dataString[&quot;response&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "myName[&quot;response&quot;]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -42,19 +56,19 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MusicViewController.(openVK(AnyObject) -&gt; ()).(closure #1):MusicViewController.swift">
+         contextName = "VKAuthorizationTableViewController.(openVK() -&gt; ()).(closure #1):VKAuthorizationTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "iter.stringValue">
+               value = "self.avatar.image">
             </PersistentString>
             <PersistentString
-               value = "iter.string">
+               value = "GlobalStorage.answerTuple.1">
             </PersistentString>
             <PersistentString
-               value = "dataString[&quot;response&quot;]">
+               value = "result[3]">
             </PersistentString>
             <PersistentString
-               value = "myName[&quot;response&quot;]">
+               value = "keys.indexOf(&quot;photo_400_orig&quot;)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -63,6 +77,14 @@
          <PersistentStrings>
             <PersistentString
                value = "GlobalStorage.userID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DownloadSessionDelegate.URLSession(NSURLSession, downloadTask : NSURLSessionDownloadTask, didFinishDownloadingToURL : NSURL) -&gt; ():DownloadSessionDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "location.path">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

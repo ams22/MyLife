@@ -13,4 +13,6 @@ struct GlobalStorage {
     static var userID = ""
     static var answerTuple = ([String: String](), UIImage())
     //"56820028"
+    static var myImageData = NSData()
+    static var checkValidNotFoundImage = false
 }

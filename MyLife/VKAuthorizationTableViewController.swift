@@ -20,6 +20,9 @@ class VKAuthorizationTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(VKAuthorizationTableViewController.updateImageFromVK), name: "imageFromVKWithoutToken", object: nil)
+        self.next.enabled = false
+        self.avatar.image = nil
         openVK()
     }
     
@@ -38,8 +41,15 @@ class VKAuthorizationTableViewController: UITableViewController {
             self.id.text = GlobalStorage.answerTuple.0["id"]
             self.name.text = GlobalStorage.answerTuple.0["first_name"]
             self.surname.text = GlobalStorage.answerTuple.0["last_name"]
-            self.avatar.image = GlobalStorage.answerTuple.1
-            self.next.enabled = true
+            if GlobalStorage.checkValidNotFoundImage {
+                self.avatar.image = GlobalStorage.answerTuple.1
+                self.next.enabled = true
+            }
         })
+    }
+    
+    func updateImageFromVK() {
+        self.avatar.image = UIImage(data: GlobalStorage.myImageData)
+        self.next.enabled = true
     }
 }
