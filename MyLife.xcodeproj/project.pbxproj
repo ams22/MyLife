@@ -47,6 +47,13 @@
 		F1B253AB1CE2167D0004E7BD /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B253AA1CE2167D0004E7BD /* Regex.swift */; };
 		F1B253AD1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B253AC1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift */; };
 		F1B4E08F1CD3DB930089F13D /* TimeTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B4E08E1CD3DB930089F13D /* TimeTableTableViewController.swift */; };
+		F1CAC9A01CECCBDC00259773 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CAC99E1CECCBDC00259773 /* Note+CoreDataProperties.swift */; };
+		F1CAC9A11CECCBDC00259773 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CAC99F1CECCBDC00259773 /* Note.swift */; };
+		F1CAC9A71CEE455400259773 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CAC9A61CEE455400259773 /* AboutView.swift */; };
+		F1CAC9A91CEE51CD00259773 /* XIBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CAC9A81CEE51CD00259773 /* XIBViewController.swift */; };
+		F1CAC9AB1CEE67D000259773 /* AboutDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CAC9AA1CEE67D000259773 /* AboutDataSource.swift */; };
+		F1CAC9AD1CEE71BC00259773 /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CAC9AC1CEE71BC00259773 /* About.swift */; };
+		F1CAC9AE1CEE76E600259773 /* About.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1CAC9A31CEE427C00259773 /* About.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +124,13 @@
 		F1B253AA1CE2167D0004E7BD /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		F1B253AC1CE273020004E7BD /* networkVKGetUserInfoWithoutToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = networkVKGetUserInfoWithoutToken.swift; sourceTree = "<group>"; };
 		F1B4E08E1CD3DB930089F13D /* TimeTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTableTableViewController.swift; sourceTree = "<group>"; };
+		F1CAC99E1CECCBDC00259773 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F1CAC99F1CECCBDC00259773 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		F1CAC9A31CEE427C00259773 /* About.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = About.xib; sourceTree = "<group>"; };
+		F1CAC9A61CEE455400259773 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F1CAC9A81CEE51CD00259773 /* XIBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XIBViewController.swift; sourceTree = "<group>"; };
+		F1CAC9AA1CEE67D000259773 /* AboutDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutDataSource.swift; sourceTree = "<group>"; };
+		F1CAC9AC1CEE71BC00259773 /* About.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +300,8 @@
 				F1B253AF1CE27D990004E7BD /* Regex */,
 				F17F393E1CD02D7F00B4654C /* Photo */,
 				F1B253AE1CE27D460004E7BD /* VKRegistration */,
+				F1CAC99E1CECCBDC00259773 /* Note+CoreDataProperties.swift */,
+				F1CAC99F1CECCBDC00259773 /* Note.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -357,6 +373,7 @@
 				F17F393B1CD02BCF00B4654C /* Model */,
 				F17F391B1CCFE22600B4654C /* View */,
 				F17F39171CCFDCF400B4654C /* SWRevealViewController */,
+				F1CAC9A51CEE44FD00259773 /* XIB */,
 				F17F39181CCFDD3600B4654C /* Assets */,
 				F17F39341CD02B2300B4654C /* Controller */,
 				F17F39291CCFE66D00B4654C /* App Delegate */,
@@ -399,6 +416,18 @@
 				F1B253AA1CE2167D0004E7BD /* Regex.swift */,
 			);
 			name = Regex;
+			sourceTree = "<group>";
+		};
+		F1CAC9A51CEE44FD00259773 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				F1CAC9A31CEE427C00259773 /* About.xib */,
+				F1CAC9A61CEE455400259773 /* AboutView.swift */,
+				F1CAC9A81CEE51CD00259773 /* XIBViewController.swift */,
+				F1CAC9AA1CEE67D000259773 /* AboutDataSource.swift */,
+				F1CAC9AC1CEE71BC00259773 /* About.swift */,
+			);
+			name = XIB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -517,6 +546,7 @@
 				F1ABAE341CC8E1D200123FE4 /* LaunchScreen.storyboard in Resources */,
 				F1ABAE311CC8E1D200123FE4 /* Assets.xcassets in Resources */,
 				F1ABAE2C1CC8E1D200123FE4 /* Main.storyboard in Resources */,
+				F1CAC9AE1CEE76E600259773 /* About.xib in Resources */,
 				F17F39551CD0427000B4654C /* downloadingList.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +624,8 @@
 				F17F391A1CCFE00500B4654C /* MenuController.swift in Sources */,
 				F17F39101CCF942D00B4654C /* LoginTableViewController.swift in Sources */,
 				F1691B7F1CD67B11006F9E20 /* GlobalStorage.swift in Sources */,
+				F1CAC9AD1CEE71BC00259773 /* About.swift in Sources */,
+				F1CAC9A71CEE455400259773 /* AboutView.swift in Sources */,
 				F17F394D1CD03AB600B4654C /* ImageRenderingOperation.swift in Sources */,
 				F17F39511CD03CF800B4654C /* ImageRenderer.swift in Sources */,
 				F1AD9C221CE5F36F00E906FB /* DownloadSessionDelegate.swift in Sources */,
@@ -602,6 +634,7 @@
 				F17F39241CCFE29E00B4654C /* MusicMenuCell.swift in Sources */,
 				F1691B7D1CD663BC006F9E20 /* VKAuthorizationTableViewController.swift in Sources */,
 				F17F39261CCFE2C900B4654C /* PhotoMenuCell.swift in Sources */,
+				F1CAC9A91CEE51CD00259773 /* XIBViewController.swift in Sources */,
 				F1B253AB1CE2167D0004E7BD /* Regex.swift in Sources */,
 				F17F392D1CCFEA7300B4654C /* MusicViewController.swift in Sources */,
 				F17F39471CD0309900B4654C /* ImageOperationProtocol.swift in Sources */,
@@ -610,6 +643,7 @@
 				F17F392B1CCFE90C00B4654C /* SettingsTableViewController.swift in Sources */,
 				F17F394B1CD0379F00B4654C /* ShowInFullScreenSegue.swift in Sources */,
 				F1ABAE271CC8E1D200123FE4 /* AppDelegate.swift in Sources */,
+				F1CAC9AB1CEE67D000259773 /* AboutDataSource.swift in Sources */,
 				F17F393D1CD02BE600B4654C /* ImageRecord.swift in Sources */,
 				F17F39331CD02B0D00B4654C /* PhotoTableViewCell.swift in Sources */,
 				F17F392F1CCFEB5700B4654C /* PhotoTableViewController.swift in Sources */,
@@ -617,8 +651,10 @@
 				F17F39121CCFA83B00B4654C /* RegistrationTableViewController.swift in Sources */,
 				F1AD9C201CE5108000E906FB /* NetworkHelper.swift in Sources */,
 				F1ABAE2F1CC8E1D200123FE4 /* MyLife.xcdatamodeld in Sources */,
+				F1CAC9A01CECCBDC00259773 /* Note+CoreDataProperties.swift in Sources */,
 				F17F391E1CCFE25B00B4654C /* TimetableMenuCell.swift in Sources */,
 				F17F39451CD0304700B4654C /* ImageDownloader.swift in Sources */,
+				F1CAC9A11CECCBDC00259773 /* Note.swift in Sources */,
 				F17F39421CD02EDC00B4654C /* ImageDownloadingOperation.swift in Sources */,
 				F17F39161CCFDCD400B4654C /* SWRevealViewController.m in Sources */,
 				F17F39401CD02D9300B4654C /* ImageOperator.swift in Sources */,

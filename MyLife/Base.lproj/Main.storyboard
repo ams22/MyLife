@@ -5,32 +5,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--О нас-->
-        <scene sceneID="Bcf-2P-GVH">
-            <objects>
-                <tableViewController id="7yE-Sq-kjK" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="ACB-Qm-3Xc">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                        <sections>
-                            <tableViewSection headerTitle="MIPT" footerTitle="DIHT" id="diZ-uL-Dyg">
-                                <cells/>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="7yE-Sq-kjK" id="uhd-SN-pIY"/>
-                            <outlet property="delegate" destination="7yE-Sq-kjK" id="MUz-bi-iqo"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="About" image="second" id="jgF-zN-SAQ"/>
-                    <navigationItem key="navigationItem" title="О нас" id="LxA-to-VjF"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cO9-2b-FBg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="751" y="220"/>
-        </scene>
         <!--Настройки-->
         <scene sceneID="pSO-1t-CXb">
             <objects>
@@ -668,7 +642,7 @@
                                                     <rect key="frame" x="19" y="8" width="46" height="30"/>
                                                     <state key="normal" title="About"/>
                                                     <connections>
-                                                        <segue destination="7yE-Sq-kjK" kind="showDetail" id="Wvb-As-vdY"/>
+                                                        <segue destination="wm4-Rx-g1w" kind="show" id="XY8-ch-EN2"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -1209,7 +1183,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yzD-dz-bLH">
                                 <rect key="frame" x="129" y="140" width="343" height="319"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="ZbS-lf-Fkw"/>
+                                    <constraint firstAttribute="width" constant="343" id="HxU-5f-zpn"/>
+                                    <constraint firstAttribute="height" constant="319" id="wZP-aH-lrm"/>
                                 </constraints>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pp8-25-86Q">
@@ -1227,11 +1202,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="yzD-dz-bLH" firstAttribute="centerX" secondItem="Pp8-25-86Q" secondAttribute="centerX" id="BeX-L1-RnG"/>
+                            <constraint firstItem="Pp8-25-86Q" firstAttribute="centerX" secondItem="yzD-dz-bLH" secondAttribute="centerX" id="1s3-zE-MMZ"/>
                             <constraint firstItem="yzD-dz-bLH" firstAttribute="centerX" secondItem="0HJ-aS-Q6R" secondAttribute="centerX" id="RNz-QA-7Qs"/>
-                            <constraint firstItem="yzD-dz-bLH" firstAttribute="top" secondItem="Pp8-25-86Q" secondAttribute="bottom" constant="96" id="SKn-Yk-Eus"/>
                             <constraint firstItem="Pp8-25-86Q" firstAttribute="leading" secondItem="0HJ-aS-Q6R" secondAttribute="leading" id="adX-XW-mDj"/>
-                            <constraint firstItem="KHm-3Q-lif" firstAttribute="top" secondItem="yzD-dz-bLH" secondAttribute="bottom" constant="141" id="lZX-mj-EA1"/>
+                            <constraint firstItem="Pp8-25-86Q" firstAttribute="top" secondItem="0HJ-aS-Q6R" secondAttribute="top" id="g1C-qI-hlp"/>
                             <constraint firstItem="yzD-dz-bLH" firstAttribute="centerY" secondItem="0HJ-aS-Q6R" secondAttribute="centerY" id="pQr-Dd-99S"/>
                         </constraints>
                     </view>
@@ -1279,15 +1253,50 @@
             </objects>
             <point key="canvasLocation" x="1443" y="220"/>
         </scene>
+        <!--XIB-->
+        <scene sceneID="The-mg-BdG">
+            <objects>
+                <viewController id="wm4-Rx-g1w" customClass="XIBViewController" customModule="MyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DF3-dX-Iun"/>
+                        <viewControllerLayoutGuide type="bottom" id="TQA-UK-mOd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SaN-mK-CIA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sjc-rK-kZg">
+                                <rect key="frame" x="266" y="513" width="69" height="30"/>
+                                <state key="normal" title="Еще"/>
+                                <connections>
+                                    <action selector="add:" destination="wm4-Rx-g1w" eventType="touchUpInside" id="O7d-XV-JWK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TQA-UK-mOd" firstAttribute="top" secondItem="Sjc-rK-kZg" secondAttribute="bottom" constant="8" symbolic="YES" id="8s2-5D-nVS"/>
+                            <constraint firstItem="Sjc-rK-kZg" firstAttribute="centerX" secondItem="SaN-mK-CIA" secondAttribute="centerX" id="LMg-S3-geT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="XIB" image="second" id="bFf-Ua-6k7"/>
+                    <connections>
+                        <outlet property="addButton" destination="Sjc-rK-kZg" id="JF2-mM-qZg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I8f-ff-wa7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="220"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Maly_logotip_V-2" width="16" height="16"/>
         <image name="menuItem" width="64" height="64"/>
         <image name="menuItemSmall" width="64" height="64"/>
-        <image name="second" width="32" height="32"/>
+        <image name="second" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eLi-Dv-J8T"/>
+        <segue reference="3nL-dz-hko"/>
         <segue reference="DXV-dl-Jwf"/>
         <segue reference="3MD-dY-7aW"/>
         <segue reference="247-58-Vot"/>

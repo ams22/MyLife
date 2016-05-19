@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol ImageOperationProtocol {
+protocol ImageOperationProtocol : class {
     func fetchedImageRecord (imageRecord : ImageRecord)
 }

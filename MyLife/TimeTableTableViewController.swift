@@ -35,8 +35,9 @@ class TimeTableTableViewController: UITableViewController {
     
     func savePlan(plan: String) {
         let entity =  NSEntityDescription.entityForName("Note", inManagedObjectContext:managedContext)
-        let timeTable = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
-        timeTable.setValue(plan, forKey: "plans")
+        let timeTable = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext) as! Note
+        timeTable.plans = plan
+        //timeTable.setValue(plan, forKey: "plans")
         do {
             try managedContext.save()
             plans.append(timeTable)

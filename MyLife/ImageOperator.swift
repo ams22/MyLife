@@ -11,7 +11,7 @@ import UIKit
 
 class ImageOperator: NSObject {
     
-    let delegate: ImageOperationProtocol!
+    weak var delegate: ImageOperationProtocol!
     static var pendingOperations = [String : NSOperation]()
     
     init (delegate: ImageOperationProtocol!) {
