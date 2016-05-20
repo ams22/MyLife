@@ -24,8 +24,6 @@ class XIBViewController: UIViewController {
         let x = CGFloat(arc4random()) % (CGFloat)(CGRectGetWidth(self.view.bounds) - width)
         let y = max(CGFloat(arc4random()) % (CGFloat)(CGRectGetHeight(self.view.bounds) - height), (self.navigationController?.navigationBar.frame.height)! + (UIApplication.sharedApplication().statusBarFrame.size.height))
         
-        print("HUY")
-        print(x, y, width, height)
         return CGRectMake(x, y, width, height)
     }
     
