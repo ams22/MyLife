@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w0R-X7-iWX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="A60-HA-3pv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -1288,6 +1288,33 @@
             </objects>
             <point key="canvasLocation" x="751" y="220"/>
         </scene>
+        <!--Autorization View Controller-->
+        <scene sceneID="tpl-VK-eIB">
+            <objects>
+                <viewController id="A60-HA-3pv" customClass="VKAutorizationViewController" customModule="MyLife" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EaA-8Q-QPq"/>
+                        <viewControllerLayoutGuide type="bottom" id="EUC-yx-VgW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="no3-fp-91b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhd-q5-NA8">
+                                <rect key="frame" x="296" y="238" width="67" height="30"/>
+                                <state key="normal" title="GOGOGO"/>
+                                <connections>
+                                    <action selector="tryConnection:" destination="A60-HA-3pv" eventType="touchUpInside" id="eCc-4c-I6N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2bR-ec-vxY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="563" y="971"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Maly_logotip_V-2" width="16" height="16"/>
@@ -1296,8 +1323,8 @@
         <image name="second" width="250" height="250"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3nL-dz-hko"/>
         <segue reference="DXV-dl-Jwf"/>
+        <segue reference="eLi-Dv-J8T"/>
         <segue reference="3MD-dY-7aW"/>
         <segue reference="247-58-Vot"/>
     </inferredMetricsTieBreakers>

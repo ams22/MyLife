@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-MyLife.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyVK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -33,6 +43,16 @@
 			<true/>
 		</dict>
 		<key>BEAE4AA0AC74A71C763F8FF7FDA688EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F830C74C9B117CA0F2E3B4DC425E1871</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FB8FC33C997226317E9A645D53689B5E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
