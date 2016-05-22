@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "MusicTableViewController.(updateSearchResults() -&gt; ()).(closure #1):MusicTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.json[&quot;count&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "NetworkHelper.getImageWithURL(String) -&gt; ():NetworkHelper.swift">
          <PersistentStrings>
             <PersistentString
@@ -91,6 +99,9 @@
       <ContextState
          contextName = "VKAuthorizationTableViewController.(authorizedConnect() -&gt; ()).(closure #1).(closure #1):VKAuthorizationTableViewController.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "dict[&quot;photo_400_orig&quot;]">
+            </PersistentString>
             <PersistentString
                value = "response.description">
             </PersistentString>

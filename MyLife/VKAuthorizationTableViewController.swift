@@ -23,10 +23,15 @@ class VKAuthorizationTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(VKAuthorizationTableViewController.updateImageFromVK), name: "imageFromVKWithoutToken", object: nil)
         self.next.enabled = false
         self.avatar.image = nil
         authorizedConnect()
+    }
+    
+    func getDataFromUrl(url:NSURL, completion: ((data: NSData?, response: NSURLResponse?, error: NSError? ) -> Void)) {
+        NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in
+            completion(data: data, response: response, error: error)
+            }.resume()
     }
     
     func authorizedConnect() {
@@ -43,8 +48,13 @@ class VKAuthorizationTableViewController: UITableViewController {
                                 self.id.text = String(dict["id"] as! Int)
                                 self.name.text = dict["first_name"] as? String
                                 self.surname.text = dict["last_name"] as? String
-                                let networkHelper = NetworkHelper()
-                                networkHelper.getImageWithURL((dict["photo_400_orig"] as? String)!)
+                                //let networkHelper = NetworkHelper()
+                                //networkHelper.getImageWithURL((dict["photo_400_orig"] as? String)!)
+                                let url = NSURL(string: String(dict["photo_400_orig"]!))
+                                self.getDataFromUrl(url!) { (data, response, error)  in
+                                    self.avatar.image = UIImage(data: data!)
+                                    self.next.enabled = true
+                                }
                         } else {
                             print("Json crush")
                         }
@@ -64,11 +74,6 @@ class VKAuthorizationTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func updateImageFromVK() {
-        self.avatar.image = UIImage(data: GlobalStorage.myImageData)
-        self.next.enabled = true
     }
     
 }
