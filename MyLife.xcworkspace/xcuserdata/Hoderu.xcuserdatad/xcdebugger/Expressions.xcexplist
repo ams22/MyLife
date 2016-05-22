@@ -73,6 +73,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "DownloadSessionDelegate.URLSession(NSURLSession, downloadTask : NSURLSessionDownloadTask, didFinishDownloadingToURL : NSURL) -&gt; ():DownloadSessionDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "location.path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "LoginTableViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():LoginTableViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -81,10 +89,13 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DownloadSessionDelegate.URLSession(NSURLSession, downloadTask : NSURLSessionDownloadTask, didFinishDownloadingToURL : NSURL) -&gt; ():DownloadSessionDelegate.swift">
+         contextName = "VKAuthorizationTableViewController.(authorizedConnect() -&gt; ()).(closure #1).(closure #1):VKAuthorizationTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "location.path">
+               value = "response.description">
+            </PersistentString>
+            <PersistentString
+               value = "response.json">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

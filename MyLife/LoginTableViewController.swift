@@ -8,8 +8,11 @@
 
 import Foundation
 import UIKit
+import VK_ios_sdk
 
 class LoginTableViewController: UITableViewController {
+    
+    let scope = [VK_PER_WALL, VK_PER_PHOTOS, VK_PER_AUDIO, VK_PER_EMAIL]
     
     @IBOutlet weak var aboutButtonItem: UIBarButtonItem!
     @IBOutlet weak var toolbar: UIToolbar!
@@ -17,56 +20,53 @@ class LoginTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         GlobalStorage.userID = ""
-    }
-    
-    func returnIncorrectInputAlertController() {
-        let incorrectInputAlert = UIAlertController(title: "Некорректный ввод", message: "Введите снова", preferredStyle: .Alert)
-        let incorrectInputOkAction = UIAlertAction(title: "Хорошо", style: .Default, handler: nil)
-        incorrectInputAlert.addAction(incorrectInputOkAction)
-        self.presentViewController(incorrectInputAlert, animated: true, completion: nil)
-    }
-    
-    func alert() {
-        let alert = UIAlertController(title: "Необходим ваш id", message: "Поле для ввода", preferredStyle: .Alert)
-        let action = UIAlertAction(title: "Сохранить", style: .Default, handler: {
-            (action: UIAlertAction) -> Void in
-            let checkString = alert.textFields!.first!.text!
-            if (Regex("[^0-9]").test(checkString)) {
-                self.returnIncorrectInputAlertController()
-            } else {
-                let intInput = Int(checkString)
-                if (intInput == 0) {
-                    self.returnIncorrectInputAlertController()
-                } else {
-                    GlobalStorage.userID = alert.textFields!.first!.text!
-                    self.performSegueWithIdentifier("LoginToVKTableViewController", sender: self)
-                }
-            }
-        })
-        let cancelAction = UIAlertAction(title: "Отмена", style: .Default, handler: nil)
-        alert.addTextFieldWithConfigurationHandler { (textField: UITextField) -> Void in }
-        alert.addAction(action)
-        alert.addAction(cancelAction)
-        presentViewController(alert, animated: true, completion: nil)
+        let sdkInstance : VKSdk = VKSdk.initializeWithAppId("5442423")
+        sdkInstance.registerDelegate(self)
+        sdkInstance.uiDelegate = self
+        //VKSdk.forceLogout()
     }
     
     @IBAction func aboutButtonItem(sender: UIBarButtonItem) {
     }
     
     @IBAction func vkRegistration(sender: AnyObject) {
-        //self.performSegueWithIdentifier("LoginToVKTableViewController", sender: self)
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "LoginToVKTableViewController") {
-            if (GlobalStorage.userID.isEmpty) {
-                alert()
+        VKSdk.wakeUpSession(scope, completeBlock: { state, error in
+            if (state == VKAuthorizationState.Initialized) {
+                VKSdk.authorize(self.scope)
             }
-        }
+            if (state == VKAuthorizationState.Authorized) {
+                let secondStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                let next = secondStoryBoard.instantiateViewControllerWithIdentifier("vkAuthorizationTableViewController") as! VKAuthorizationTableViewController
+                self.navigationController?.pushViewController(next, animated: true)
+            } else if (error != nil) {
+                print(error)
+            }
+        })
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+}
+
+extension LoginTableViewController: VKSdkDelegate, VKSdkUIDelegate {
+    func vkSdkNeedCaptchaEnter(captchaError: VKError) {}
+    func vkSdkTokenHasExpired(expiredToken: VKAccessToken) {}
+    func vkSdkUserDeniedAccess(authorizationError: VKError) {}
+    func vkSdkShouldPresentViewController(controller: UIViewController) {
+        self.presentViewController(controller, animated: true, completion: nil)
+    }
+    func vkSdkReceivedNewToken(newToken: VKAccessToken) {}
+    func vkSdkAccessAuthorizationFinishedWithResult(result: VKAuthorizationResult!) {
+        if ((result.token) != nil) {
+            print(result.token.accessToken)
+            let secondStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+            let next = secondStoryBoard.instantiateViewControllerWithIdentifier("vkAuthorizationTableViewController") as! VKAuthorizationTableViewController
+            self.navigationController?.pushViewController(next, animated: true)
+        } else if ((result.error) != nil) {
+            print("error")
+        }
+    }
+    func vkSdkUserAuthorizationFailed() {}
 }
