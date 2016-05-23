@@ -42,26 +42,26 @@ class networkVKGetUserInfoWithoutToken {
             }
             
             if ((keys.indexOf("id")) != nil) {
-                GlobalStorage.answerTuple.0["id"] = result[keys.indexOf("id")!]
+                //GlobalStorage.answerTuple.0["id"] = result[keys.indexOf("id")!]
             } else {
-                GlobalStorage.answerTuple.0["id"] = "Not found"
+                //GlobalStorage.answerTuple.0["id"] = "Not found"
             }
             if (keys.indexOf("first_name") != nil) {
-                GlobalStorage.answerTuple.0["first_name"] = result[keys.indexOf("first_name")!]
+                //GlobalStorage.answerTuple.0["first_name"] = result[keys.indexOf("first_name")!]
             } else {
-                GlobalStorage.answerTuple.0["first_name"] = "Not found"
+                //GlobalStorage.answerTuple.0["first_name"] = "Not found"
             }
             if ((keys.indexOf("last_name")) != nil) {
-                GlobalStorage.answerTuple.0["last_name"] = result[keys.indexOf("last_name")!]
+                //GlobalStorage.answerTuple.0["last_name"] = result[keys.indexOf("last_name")!]
             } else {
-                GlobalStorage.answerTuple.0["last_name"] = "Not found"
+                //GlobalStorage.answerTuple.0["last_name"] = "Not found"
             }
             if ((keys.indexOf("photo_400_orig")) != nil) {
                 let networkHelper = NetworkHelper()
                 networkHelper.getImageWithURL(result[keys.indexOf("photo_400_orig")!])
             } else {
-                GlobalStorage.answerTuple.1 = UIImage(named: "notFound")!
-                GlobalStorage.checkValidNotFoundImage = true
+                //GlobalStorage.answerTuple.1 = UIImage(named: "notFound")!
+                //GlobalStorage.checkValidNotFoundImage = true
             }
             completion()
             }, failure: { (sessionDataTask, error) in

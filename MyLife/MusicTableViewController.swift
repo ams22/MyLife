@@ -46,7 +46,7 @@ class MusicTableViewController: UIViewController, NSURLSessionDelegate {
     
     func updateSearchResults() {
         searchResults.removeAll()
-        let request: VKRequest = VKApi.requestWithMethod("audio.get", andParameters: ["owner_id": "56820028", "count": "100"])
+        let request: VKRequest = VKApi.requestWithMethod("audio.get", andParameters: ["owner_id": GlobalStorage.userID, "count": "100"])
         request.executeWithResultBlock(
             {response in
                 print(response.json)

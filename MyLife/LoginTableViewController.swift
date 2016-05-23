@@ -20,11 +20,9 @@ class LoginTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        GlobalStorage.userID = ""
         let sdkInstance : VKSdk = VKSdk.initializeWithAppId("5442423")
         sdkInstance.registerDelegate(self)
         sdkInstance.uiDelegate = self
-        //VKSdk.forceLogout()
     }
     
     
@@ -45,6 +43,27 @@ class LoginTableViewController: UITableViewController {
                 print(error)
             }
         })
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (indexPath.section == 1) {
+            switch (indexPath.item) {
+                case 0:
+                    self.performSegueWithIdentifier("loginToTimetableViewController", sender: self)
+                    break
+                case 1:
+                    vkRegistration(self)
+                    break
+                case 2:
+                    let secondStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                    let next = secondStoryBoard.instantiateViewControllerWithIdentifier("xibViewController") as! XIBViewController
+                    self.navigationController?.pushViewController(next, animated: true)
+                    break
+                default:
+                    break
+            }
+        }
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     override func didReceiveMemoryWarning() {

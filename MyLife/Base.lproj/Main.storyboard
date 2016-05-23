@@ -218,7 +218,7 @@
                                                     </constraints>
                                                     <state key="normal" title="Далее"/>
                                                     <connections>
-                                                        <segue destination="x8I-Kd-eXI" kind="presentation" id="eLi-Dv-J8T"/>
+                                                        <segue destination="x8I-Kd-eXI" kind="presentation" id="7Yv-Ui-c5C"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -236,13 +236,7 @@
                             <outlet property="delegate" destination="N7L-Ee-YnM" id="MV8-NW-8Zn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FrX-rd-9qx">
-                        <barButtonItem key="leftBarButtonItem" title="Назад" id="VwK-Ia-oks">
-                            <connections>
-                                <segue destination="4DK-BK-4O5" kind="presentation" id="DXV-dl-Jwf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="FrX-rd-9qx"/>
                     <connections>
                         <outlet property="avatar" destination="SBB-Bg-YHS" id="XTa-8Z-NV7"/>
                         <outlet property="id" destination="BgA-ES-7dx" id="vC6-rY-mJ8"/>
@@ -395,7 +389,7 @@
         <!--Reveal View Controller-->
         <scene sceneID="cJa-px-wm3">
             <objects>
-                <viewController storyboardIdentifier="SWReveal" id="x8I-Kd-eXI" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SWReveal" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x8I-Kd-eXI" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tmg-qF-QXa"/>
                         <viewControllerLayoutGuide type="bottom" id="XTV-8u-cF0"/>
@@ -731,7 +725,7 @@
         <!--XIB-->
         <scene sceneID="The-mg-BdG">
             <objects>
-                <viewController id="wm4-Rx-g1w" customClass="XIBViewController" customModule="MyLife" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="xibViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wm4-Rx-g1w" customClass="XIBViewController" customModule="MyLife" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DF3-dX-Iun"/>
                         <viewControllerLayoutGuide type="bottom" id="TQA-UK-mOd"/>
@@ -880,8 +874,7 @@
         <image name="menuItemSmall" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="O3w-CS-rUy"/>
-        <segue reference="1i4-uG-1BM"/>
-        <segue reference="5zr-mL-7Xo"/>
+        <segue reference="7Yv-Ui-c5C"/>
+        <segue reference="3MD-dY-7aW"/>
     </inferredMetricsTieBreakers>
 </document>

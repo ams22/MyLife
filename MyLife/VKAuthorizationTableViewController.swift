@@ -46,14 +46,15 @@ class VKAuthorizationTableViewController: UITableViewController {
                         if let respon = response.json as? NSArray,
                             let dict = respon[0] as? NSDictionary {
                                 self.id.text = String(dict["id"] as! Int)
+                                GlobalStorage.userID = String(dict["id"] as! Int)
                                 self.name.text = dict["first_name"] as? String
                                 self.surname.text = dict["last_name"] as? String
                                 //let networkHelper = NetworkHelper()
                                 //networkHelper.getImageWithURL((dict["photo_400_orig"] as? String)!)
+                                self.next.enabled = true
                                 let url = NSURL(string: String(dict["photo_400_orig"]!))
                                 self.getDataFromUrl(url!) { (data, response, error)  in
                                     self.avatar.image = UIImage(data: data!)
-                                    self.next.enabled = true
                                 }
                         } else {
                             print("Json crush")
@@ -65,6 +66,20 @@ class VKAuthorizationTableViewController: UITableViewController {
              print(error)
             }
         })
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (indexPath.section == 0) {
+            switch (indexPath.item) {
+                case 4:
+                    let secondStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+                    let next = secondStoryBoard.instantiateViewControllerWithIdentifier("SWReveal") as! SWRevealViewController
+                    self.presentViewController(next, animated: true, completion: nil)
+                    break
+                default:
+                    break
+            }
+        }
     }
     
     override func viewWillAppear(animated: Bool) {

@@ -29,7 +29,7 @@ class DownloadSessionDelegate : NSObject, NSURLSessionDelegate, NSURLSessionDown
     
     func URLSession(session: NSURLSession, downloadTask: NSURLSessionDownloadTask, didFinishDownloadingToURL location: NSURL) {
         print(location.path)
-        GlobalStorage.myImageData = NSFileManager.defaultManager().contentsAtPath(location.path!)!
+        //GlobalStorage.myImageData = NSFileManager.defaultManager().contentsAtPath(location.path!)!
         dispatch_async(dispatch_get_main_queue()) {
             NSNotificationCenter.defaultCenter().postNotificationName("imageFromVKWithoutToken", object: self)
         }
