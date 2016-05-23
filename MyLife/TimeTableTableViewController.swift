@@ -37,6 +37,7 @@ class TimeTableTableViewController: UITableViewController {
         let entity =  NSEntityDescription.entityForName("Note", inManagedObjectContext:managedContext)
         let timeTable = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext) as! Note
         timeTable.plans = plan
+        timeTable.email = GlobalStorage.userEmail
         //timeTable.setValue(plan, forKey: "plans")
         do {
             try managedContext.save()
@@ -96,6 +97,9 @@ class TimeTableTableViewController: UITableViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         let fetchRequest = NSFetchRequest(entityName: "Note")
+        let resultPredicate1 = NSPredicate(format: "email = %@", GlobalStorage.userEmail)
+        fetchRequest.predicate = resultPredicate1
+        
         do {
             let results = try managedContext.executeFetchRequest(fetchRequest)
             plans = results as! [NSManagedObject]
@@ -116,7 +120,9 @@ class TimeTableTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = timeTable.dequeueReusableCellWithIdentifier("Cell")
         let plan = plans[indexPath.row]
+        
         cell!.textLabel!.text = plan.valueForKey("plans") as? String
+       
         return cell!
     }
     

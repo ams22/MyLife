@@ -13,6 +13,12 @@ class ImageInFullSizeViewController: UIViewController, ImageOperationProtocol {
     
     @IBOutlet weak var imageInFullSize: UIImageView!
     
+//    @IBAction func back(sender: AnyObject) {
+//        let secondStoryBoard = UIStoryboard(name: "Main", bundle: nil)
+//        let next = secondStoryBoard.instantiateViewControllerWithIdentifier("photoTableViewController") as! PhotoTableViewController
+//        self.navigationController?.pushViewController(next, animated: true)
+//    }
+    
     var imageRenderer : ImageRenderer!
     var imageRecord : ImageRecord!
     

@@ -19,8 +19,6 @@ class TrackCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var artistLabel: UILabel!
-    @IBOutlet weak var progressLabel: UILabel!
-    
     @IBOutlet weak var downloadButton: UIButton!
     
     @IBAction func downloadTapped(sender: AnyObject) {

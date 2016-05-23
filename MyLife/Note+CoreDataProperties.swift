@@ -15,5 +15,6 @@ import CoreData
 extension Note {
 
     @NSManaged var plans: String?
+    @NSManaged var email: String?
     
 }

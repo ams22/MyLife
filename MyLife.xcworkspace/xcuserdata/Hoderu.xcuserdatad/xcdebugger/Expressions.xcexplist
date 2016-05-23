@@ -3,10 +3,24 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "MusicTableViewController.(updateSearchResults() -&gt; ()).(closure #1):MusicTableViewController.swift">
+         contextName = "VKAuthorizationTableViewController.(authorizedConnect() -&gt; ()).(closure #1).(closure #1):VKAuthorizationTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "response.json[&quot;count&quot;]">
+               value = "response.json">
+            </PersistentString>
+            <PersistentString
+               value = "dict[&quot;photo_400_orig&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "response.description">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginTableViewController.tryEnterWithEmail(AnyObject) -&gt; ():LoginTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "userEmail.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -40,6 +54,14 @@
             </PersistentString>
             <PersistentString
                value = "myName[&quot;response&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TimeTableTableViewController.viewDidLoad() -&gt; ():TimeTableTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "GlobalStorage.userEmail">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -97,16 +119,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "VKAuthorizationTableViewController.(authorizedConnect() -&gt; ()).(closure #1).(closure #1):VKAuthorizationTableViewController.swift">
+         contextName = "MusicTableViewController.(updateSearchResults() -&gt; ()).(closure #1):MusicTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "dict[&quot;photo_400_orig&quot;]">
-            </PersistentString>
-            <PersistentString
-               value = "response.description">
-            </PersistentString>
-            <PersistentString
-               value = "response.json">
+               value = "response.json[&quot;count&quot;]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

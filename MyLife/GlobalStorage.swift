@@ -15,4 +15,6 @@ struct GlobalStorage {
     //"56820028"
     static var myImageData = NSData()
     static var checkValidNotFoundImage = false
+    
+    static var userEmail = ""
 }

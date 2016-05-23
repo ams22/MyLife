@@ -14,6 +14,7 @@ class LoginTableViewController: UITableViewController {
     
     let scope = [VK_PER_WALL, VK_PER_PHOTOS, VK_PER_AUDIO, VK_PER_EMAIL]
     
+    @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var aboutButtonItem: UIBarButtonItem!
     @IBOutlet weak var toolbar: UIToolbar!
     
@@ -26,8 +27,10 @@ class LoginTableViewController: UITableViewController {
         //VKSdk.forceLogout()
     }
     
-    @IBAction func aboutButtonItem(sender: UIBarButtonItem) {
-    }
+    
+    @IBAction func tryEnterWithEmail(sender: AnyObject) {}
+    
+    @IBAction func aboutButtonItem(sender: UIBarButtonItem) {}
     
     @IBAction func vkRegistration(sender: AnyObject) {
         VKSdk.wakeUpSession(scope, completeBlock: { state, error in
@@ -47,6 +50,24 @@ class LoginTableViewController: UITableViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "loginToTimetableViewController") {
+            if (userEmail.text == "") {
+                let alert = UIAlertController(title: "Заполните поле email", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+                let actionOk = UIAlertAction(title: "Хорошо", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(actionOk)
+                self.presentViewController(alert, animated: true, completion: nil)
+            } else if (!Regex("[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}").test(userEmail.text!)) {
+                let alert = UIAlertController(title: "Email введен неверно", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+                let actionOk = UIAlertAction(title: "Хорошо", style: UIAlertActionStyle.Default, handler: nil)
+                alert.addAction(actionOk)
+                self.presentViewController(alert, animated: true, completion: nil)
+            } else {
+                GlobalStorage.userEmail = userEmail.text!
+            }
+        }
     }
 }
 

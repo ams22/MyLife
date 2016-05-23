@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A2F1C9F87C66831133382CA7 /* Pods_MyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E82E67FC97C72851D7A8B1F /* Pods_MyLife.framework */; };
 		B45D88E0A050BF4F4889314B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875844F3A7DAFCDF2FF873A0 /* Pods.framework */; };
-		F10292F51CEF8B8C00B42A91 /* VKAutorizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10292F41CEF8B8C00B42A91 /* VKAutorizationViewController.swift */; };
 		F153A9731CF1F29600DAF522 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153A9721CF1F29600DAF522 /* Track.swift */; };
 		F153A9751CF1F2AC00DAF522 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153A9741CF1F2AC00DAF522 /* TrackCell.swift */; };
 		F153A9771CF1F2BD00DAF522 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153A9761CF1F2BD00DAF522 /* Download.swift */; };
@@ -83,7 +82,6 @@
 		6DD4563F5F3D0D52551AAFB0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		875844F3A7DAFCDF2FF873A0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E82E67FC97C72851D7A8B1F /* Pods_MyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F10292F41CEF8B8C00B42A91 /* VKAutorizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKAutorizationViewController.swift; sourceTree = "<group>"; };
 		F153A9721CF1F29600DAF522 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		F153A9741CF1F2AC00DAF522 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		F153A9761CF1F2BD00DAF522 /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
@@ -234,7 +232,6 @@
 			children = (
 				F1ABAE351CC8E1D200123FE4 /* Info.plist */,
 				F1ABAE2A1CC8E1D200123FE4 /* Main.storyboard */,
-				F10292F41CEF8B8C00B42A91 /* VKAutorizationViewController.swift */,
 				F1691B7E1CD67B11006F9E20 /* GlobalStorage.swift */,
 				F1ABAE281CC8E1D200123FE4 /* ViewController.swift */,
 				F1ABAE261CC8E1D200123FE4 /* AppDelegate.swift */,
@@ -268,6 +265,8 @@
 		F17F39361CD02B4400B4654C /* TimeTable */ = {
 			isa = PBXGroup;
 			children = (
+				F1CAC99F1CECCBDC00259773 /* Note.swift */,
+				F1CAC99E1CECCBDC00259773 /* Note+CoreDataProperties.swift */,
 				F1B4E08E1CD3DB930089F13D /* TimeTableTableViewController.swift */,
 			);
 			name = TimeTable;
@@ -316,8 +315,6 @@
 				F1B253AF1CE27D990004E7BD /* Regex */,
 				F17F393E1CD02D7F00B4654C /* Photo */,
 				F1B253AE1CE27D460004E7BD /* VKRegistration */,
-				F1CAC99E1CECCBDC00259773 /* Note+CoreDataProperties.swift */,
-				F1CAC99F1CECCBDC00259773 /* Note.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -650,7 +647,6 @@
 				F17F39241CCFE29E00B4654C /* MusicMenuCell.swift in Sources */,
 				F1691B7D1CD663BC006F9E20 /* VKAuthorizationTableViewController.swift in Sources */,
 				F17F39261CCFE2C900B4654C /* PhotoMenuCell.swift in Sources */,
-				F10292F51CEF8B8C00B42A91 /* VKAutorizationViewController.swift in Sources */,
 				F1CAC9A91CEE51CD00259773 /* XIBViewController.swift in Sources */,
 				F1B253AB1CE2167D0004E7BD /* Regex.swift in Sources */,
 				F17F392D1CCFEA7300B4654C /* MusicTableViewController.swift in Sources */,
