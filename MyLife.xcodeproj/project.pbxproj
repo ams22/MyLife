@@ -14,6 +14,7 @@
 		F153A9771CF1F2BD00DAF522 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153A9761CF1F2BD00DAF522 /* Download.swift */; };
 		F1691B7D1CD663BC006F9E20 /* VKAuthorizationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1691B7C1CD663BC006F9E20 /* VKAuthorizationTableViewController.swift */; };
 		F1691B7F1CD67B11006F9E20 /* GlobalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1691B7E1CD67B11006F9E20 /* GlobalStorage.swift */; };
+		F17D881F1CF3922D0095944B /* StartNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17D881E1CF3922D0095944B /* StartNavigationController.swift */; };
 		F17F39101CCF942D00B4654C /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F390F1CCF942D00B4654C /* LoginTableViewController.swift */; };
 		F17F39121CCFA83B00B4654C /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17F39111CCFA83B00B4654C /* RegistrationTableViewController.swift */; };
 		F17F39161CCFDCD400B4654C /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F17F39151CCFDCD400B4654C /* SWRevealViewController.m */; };
@@ -87,6 +88,7 @@
 		F153A9761CF1F2BD00DAF522 /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		F1691B7C1CD663BC006F9E20 /* VKAuthorizationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VKAuthorizationTableViewController.swift; sourceTree = "<group>"; };
 		F1691B7E1CD67B11006F9E20 /* GlobalStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalStorage.swift; sourceTree = "<group>"; };
+		F17D881E1CF3922D0095944B /* StartNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartNavigationController.swift; sourceTree = "<group>"; };
 		F17F390F1CCF942D00B4654C /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 		F17F39111CCFA83B00B4654C /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
 		F17F39131CCFDCB700B4654C /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				F1ABAE351CC8E1D200123FE4 /* Info.plist */,
 				F1ABAE2A1CC8E1D200123FE4 /* Main.storyboard */,
 				F1691B7E1CD67B11006F9E20 /* GlobalStorage.swift */,
+				F17D881E1CF3922D0095944B /* StartNavigationController.swift */,
 				F1ABAE281CC8E1D200123FE4 /* ViewController.swift */,
 				F1ABAE261CC8E1D200123FE4 /* AppDelegate.swift */,
 			);
@@ -668,6 +671,7 @@
 				F1ABAE2F1CC8E1D200123FE4 /* MyLife.xcdatamodeld in Sources */,
 				F1CAC9A01CECCBDC00259773 /* Note+CoreDataProperties.swift in Sources */,
 				F17F391E1CCFE25B00B4654C /* TimetableMenuCell.swift in Sources */,
+				F17D881F1CF3922D0095944B /* StartNavigationController.swift in Sources */,
 				F153A9751CF1F2AC00DAF522 /* TrackCell.swift in Sources */,
 				F17F39451CD0304700B4654C /* ImageDownloader.swift in Sources */,
 				F1CAC9A11CECCBDC00259773 /* Note.swift in Sources */,

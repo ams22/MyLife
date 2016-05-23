@@ -57,10 +57,8 @@ class PhotoTableViewController: UITableViewController {
         if ( segue.identifier == ShowInFullScreenSegue) {
             let cell = sender as! PhotoTableViewCell
             let destinationVC = segue.destinationViewController as! ImageInFullSizeViewController
-            let indicator = cell.accessoryView as! UIActivityIndicatorView
             let imageView : UIImageView? = sender?.imageView
             if (imageView != nil) {
-                imageView?.addSubview(indicator)
                 destinationVC.imageRecord = cell.imageRecord
             }
         }

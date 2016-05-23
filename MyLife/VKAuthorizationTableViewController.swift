@@ -39,7 +39,6 @@ class VKAuthorizationTableViewController: UITableViewController {
             if (state == VKAuthorizationState.Authorized) {
                 print(VKSdk.accessToken().accessToken)
                 GlobalStorage.userEmail = VKSdk.accessToken().email
-                //let request: VKRequest = VKApi.requestWithMethod("audio.get", andParameters: ["owner_id": "56820028", "count": "3"])
                 let request: VKRequest = VKApi.requestWithMethod("users.get", andParameters: ["fields":"photo_400_orig"])
                 request.executeWithResultBlock(
                     {response in

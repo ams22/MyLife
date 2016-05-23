@@ -3,69 +3,6 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "VKAuthorizationTableViewController.(authorizedConnect() -&gt; ()).(closure #1).(closure #1):VKAuthorizationTableViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "response.json">
-            </PersistentString>
-            <PersistentString
-               value = "dict[&quot;photo_400_orig&quot;]">
-            </PersistentString>
-            <PersistentString
-               value = "response.description">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "LoginTableViewController.tryEnterWithEmail(AnyObject) -&gt; ():LoginTableViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "userEmail.text">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "NetworkHelper.getImageWithURL(String) -&gt; ():NetworkHelper.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "data">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "LoginTableViewController.Regex.test(String) -&gt; Bool:LoginTableViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "matches.count">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MusicViewController.(openVK(AnyObject) -&gt; ()).(closure #1):MusicViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "iter.stringValue">
-            </PersistentString>
-            <PersistentString
-               value = "iter.string">
-            </PersistentString>
-            <PersistentString
-               value = "dataString[&quot;response&quot;]">
-            </PersistentString>
-            <PersistentString
-               value = "myName[&quot;response&quot;]">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "TimeTableTableViewController.viewDidLoad() -&gt; ():TimeTableTableViewController.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "GlobalStorage.userEmail">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
          contextName = "MusicViewController.(getToken(AnyObject) -&gt; ()).(closure #1):MusicViewController.swift">
          <PersistentStrings>
             <PersistentString
@@ -82,6 +19,98 @@
             </PersistentString>
             <PersistentString
                value = "sessionDataTask">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TimeTableTableViewController.viewDidLoad() -&gt; ():TimeTableTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "GlobalStorage.userEmail">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "NetworkHelper.getImageWithURL(String) -&gt; ():NetworkHelper.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "VKAuthorizationTableViewController.(authorizedConnect() -&gt; ()).(closure #1).(closure #1):VKAuthorizationTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.description">
+            </PersistentString>
+            <PersistentString
+               value = "response.json">
+            </PersistentString>
+            <PersistentString
+               value = "dict[&quot;photo_400_orig&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MusicTableViewController.(updateSearchResults() -&gt; ()).(closure #1):MusicTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.json[&quot;count&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginTableViewController.tryEnterWithEmail(AnyObject) -&gt; ():LoginTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "userEmail.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DownloadSessionDelegate.URLSession(NSURLSession, downloadTask : NSURLSessionDownloadTask, didFinishDownloadingToURL : NSURL) -&gt; ():DownloadSessionDelegate.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "location.path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginTableViewController.Regex.test(String) -&gt; Bool:LoginTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "matches.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ImageInFullSizeViewController.viewWillAppear(Bool) -&gt; ():ImageInFullSizeViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "LoginTableViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():LoginTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "GlobalStorage.userID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TimeTableTableViewController.savePlan(String) -&gt; ():TimeTableTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "GlobalStorage.userEmail.lowercaseString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SettingsTableViewController.tableView(UITableView, didSelectRowAtIndexPath : NSIndexPath) -&gt; ():SettingsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.item">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.section">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -103,26 +132,19 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "DownloadSessionDelegate.URLSession(NSURLSession, downloadTask : NSURLSessionDownloadTask, didFinishDownloadingToURL : NSURL) -&gt; ():DownloadSessionDelegate.swift">
+         contextName = "MusicViewController.(openVK(AnyObject) -&gt; ()).(closure #1):MusicViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "location.path">
+               value = "iter.stringValue">
             </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "LoginTableViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():LoginTableViewController.swift">
-         <PersistentStrings>
             <PersistentString
-               value = "GlobalStorage.userID">
+               value = "iter.string">
             </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "MusicTableViewController.(updateSearchResults() -&gt; ()).(closure #1):MusicTableViewController.swift">
-         <PersistentStrings>
             <PersistentString
-               value = "response.json[&quot;count&quot;]">
+               value = "dataString[&quot;response&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "myName[&quot;response&quot;]">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

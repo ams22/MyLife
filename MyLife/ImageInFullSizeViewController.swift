@@ -13,12 +13,6 @@ class ImageInFullSizeViewController: UIViewController, ImageOperationProtocol {
     
     @IBOutlet weak var imageInFullSize: UIImageView!
     
-//    @IBAction func back(sender: AnyObject) {
-//        let secondStoryBoard = UIStoryboard(name: "Main", bundle: nil)
-//        let next = secondStoryBoard.instantiateViewControllerWithIdentifier("photoTableViewController") as! PhotoTableViewController
-//        self.navigationController?.pushViewController(next, animated: true)
-//    }
-    
     var imageRenderer : ImageRenderer!
     var imageRecord : ImageRecord!
     
@@ -30,6 +24,13 @@ class ImageInFullSizeViewController: UIViewController, ImageOperationProtocol {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "fullSizeToImageTableViewController") {
+            let timetableViewController = PhotoTableViewController()
+            (segue.destinationViewController as! PhotoTableViewController).presentViewController(timetableViewController, animated: true, completion: nil)
+        }
     }
 }
 
