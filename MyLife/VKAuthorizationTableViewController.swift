@@ -23,6 +23,7 @@ class VKAuthorizationTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = uicolorFromHex(0xffff00)
         self.next.enabled = false
         self.avatar.image = nil
         authorizedConnect()
@@ -50,12 +51,13 @@ class VKAuthorizationTableViewController: UITableViewController {
                                 GlobalStorage.userID = String(dict["id"] as! Int)
                                 self.name.text = dict["first_name"] as? String
                                 self.surname.text = dict["last_name"] as? String
+                                self.next.enabled = true
                                 //let networkHelper = NetworkHelper()
                                 //networkHelper.getImageWithURL((dict["photo_400_orig"] as? String)!)
-                                self.next.enabled = true
                                 let url = NSURL(string: String(dict["photo_400_orig"]!))
                                 self.getDataFromUrl(url!) { (data, response, error)  in
                                     self.avatar.image = UIImage(data: data!)
+                                    //self.tableView.reloadData()
                                 }
                         } else {
                             print("Json crush")
@@ -82,8 +84,7 @@ class VKAuthorizationTableViewController: UITableViewController {
                     for i in it {
                         print(i["photo_604"])
                         if let photo_url = i["photo_604"] {
-                            //self.imagesLinks.append(photo_url as! String)
-                            str = str + (photo_url as! String) + " "
+                            str.appendContentsOf((photo_url as! String) + "\n")
                             print(photo_url as! String)
                         }
                     }

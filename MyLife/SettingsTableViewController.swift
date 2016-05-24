@@ -16,6 +16,11 @@ class SettingsTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //-----------------------COLORS------------------------------------------
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = uicolorFromHex(0x670067)
+        self.view.backgroundColor = uicolorFromHex(0xffff00)
+        //-----------------------------------------------------------------------
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))

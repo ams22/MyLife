@@ -14,6 +14,8 @@ class MenuController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = uicolorFromHex(0xffff00)
+        
         tableView.tableFooterView = UIView(frame: CGRect.zero)
         
         // Uncomment the following line to preserve selection between presentations
@@ -36,22 +38,27 @@ class MenuController: UITableViewController {
         switch indexPath.row {
         case 0:
             let cell = tableView.dequeueReusableCellWithIdentifier("UserInfoMenuCell", forIndexPath: indexPath) as! UserInfoMenuCell
+            cell.backgroundColor = uicolorFromHex(0xffff00)
             return cell
         case 1:
             let cell = tableView.dequeueReusableCellWithIdentifier("TimetableMenuCell", forIndexPath: indexPath) as! TimetableMenuCell
             cell.timetableLabel?.text = "Расписание"
+            cell.backgroundColor = uicolorFromHex(0x950095)
             return cell
         case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier("SettingsMenuCell", forIndexPath: indexPath) as! SettingsMenuCell
             cell.settingsLabel?.text = "Настройки"
+            cell.backgroundColor = uicolorFromHex(0xffff00)
             return cell
         case 3:
             let cell = tableView.dequeueReusableCellWithIdentifier("MusicMenuCell", forIndexPath: indexPath) as! MusicMenuCell
             cell.musicLabel?.text = "Музыка"
+            cell.backgroundColor = uicolorFromHex(0x950095)
             return cell
         case 4:
             let cell = tableView.dequeueReusableCellWithIdentifier("PhotoMenuCell", forIndexPath: indexPath) as! PhotoMenuCell
             cell.photoLabel?.text = "Фотографии"
+            cell.backgroundColor = uicolorFromHex(0xffff00)
             return cell
         default:
             return tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell

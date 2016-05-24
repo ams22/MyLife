@@ -21,6 +21,10 @@ class PhotoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //-----------------------COLORS------------------------------------------
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = uicolorFromHex(0x670067)
+        //-----------------------------------------------------------------------
         if self.revealViewController() != nil {
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -38,7 +42,7 @@ class PhotoTableViewController: UITableViewController {
         
         let filePath = NSHomeDirectory() + "/Library/Caches/test.txt"
         do {
-            self.imagesLinks = (try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)).componentsSeparatedByString(" ")
+            self.imagesLinks = (try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)).componentsSeparatedByString("\n")
         } catch _ as NSError {
             let path = NSBundle.mainBundle().pathForResource("downloadingList", ofType: "txt")
             self.imagesLinks = (try! String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)).componentsSeparatedByString("\n")
@@ -66,6 +70,12 @@ class PhotoTableViewController: UITableViewController {
         
         print("cellForRow: ", indexPath.row + 1)
         let cell : PhotoTableViewCell = tableView.dequeueReusableCellWithIdentifier("firstCell", forIndexPath: indexPath) as! PhotoTableViewCell
+        
+        if (indexPath.row % 2 == 0) {
+            cell.backgroundColor = uicolorFromHex(0xffff00)
+        } else {
+            cell.backgroundColor = uicolorFromHex(0x670067)
+        }
         
         if (PhotoTableViewController.downloadedImages[indexPath] == nil) {
             PhotoTableViewController.downloadedImages[indexPath] = cell.imageRecord

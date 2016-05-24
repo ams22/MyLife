@@ -10,6 +10,14 @@ import Foundation
 import UIKit
 import VK_ios_sdk
 
+func uicolorFromHex(rgbValue: UInt32) -> UIColor{
+    let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
+    let green = CGFloat((rgbValue & 0xFF00) >> 8)/256.0
+    let blue = CGFloat(rgbValue & 0xFF)/256.0
+    
+    return UIColor(red:red, green:green, blue:blue, alpha:1.0)
+}
+
 class LoginTableViewController: UITableViewController {
     
     let scope = [VK_PER_WALL, VK_PER_PHOTOS, VK_PER_AUDIO, VK_PER_EMAIL, VK_PER_FRIENDS]
@@ -20,6 +28,10 @@ class LoginTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = uicolorFromHex(0xffff00)
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = uicolorFromHex(0x670067)
+        
         let filePath = NSHomeDirectory() + "/Library/Caches/test.txt"
         do {
             try NSFileManager.defaultManager().removeItemAtPath(filePath)

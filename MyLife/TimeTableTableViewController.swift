@@ -84,6 +84,11 @@ class TimeTableTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //-----------------------COLORS------------------------------------------
+        self.view.backgroundColor = uicolorFromHex(0xffff00)
+        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.barTintColor = uicolorFromHex(0x670067)
+        //-----------------------------------------------------------------------
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         self.managedContext = appDelegate.managedObjectContext
         if self.revealViewController() != nil {
@@ -123,6 +128,7 @@ class TimeTableTableViewController: UITableViewController {
         
         cell!.textLabel!.text = plan.valueForKey("plans") as? String
        
+        cell!.backgroundColor = uicolorFromHex(0xffff00)
         return cell!
     }
     
