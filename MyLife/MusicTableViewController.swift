@@ -36,6 +36,12 @@ class MusicTableViewController: UIViewController, NSURLSessionDelegate {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
+        if (GlobalStorage.userID == "") {
+            let alert = UIAlertController(title: "Вы не залогинились через вк", message: "", preferredStyle: UIAlertControllerStyle.Alert)
+            let actionOk = UIAlertAction(title: "Хорошо", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(actionOk)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
         tableView.tableFooterView = UIView()
         self.updateSearchResults()
     }

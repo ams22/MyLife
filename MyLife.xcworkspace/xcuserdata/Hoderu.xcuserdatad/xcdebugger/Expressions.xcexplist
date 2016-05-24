@@ -69,6 +69,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "MusicTableViewController.viewDidLoad() -&gt; ():MusicTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "VKSdk.accessToken().accessToken">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "DownloadSessionDelegate.URLSession(NSURLSession, downloadTask : NSURLSessionDownloadTask, didFinishDownloadingToURL : NSURL) -&gt; ():DownloadSessionDelegate.swift">
          <PersistentStrings>
             <PersistentString
