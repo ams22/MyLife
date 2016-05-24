@@ -61,11 +61,11 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="" footerTitle="" id="HME-c3-wmf">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zi1-2z-egX">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="zi1-2z-egX">
                                         <rect key="frame" x="0.0" y="178" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zi1-2z-egX" id="zut-Uo-flQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_about" translatesAutoresizingMaskIntoConstraints="NO" id="YYa-e2-0Cf">
@@ -901,6 +901,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3MD-dY-7aW"/>
-        <segue reference="O3w-CS-rUy"/>
+        <segue reference="7Yv-Ui-c5C"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -18,6 +18,11 @@ class XIBViewController: UIViewController {
         super.awakeFromNib()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = uicolorFromHex(0xffff00)
+    }
+    
     func randomPostFrame() -> CGRect {
         let width = max(256, min(150.0 + CGFloat(arc4random()) % (CGFloat)(CGRectGetWidth(self.view.bounds) - 100.0), 350))
         let height = min(250.0 + CGFloat(arc4random()) % min(500.0, (CGFloat)(CGRectGetHeight(self.view.bounds) - 200.0)), 600)

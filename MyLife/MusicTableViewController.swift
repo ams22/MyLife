@@ -33,6 +33,7 @@ class MusicTableViewController: UIViewController, NSURLSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         //-----------------------COLORS------------------------------------------
+        self.view.backgroundColor = uicolorFromHex(0xffff00)
         self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
         self.navigationController?.navigationBar.barTintColor = uicolorFromHex(0x670067)
         //-----------------------------------------------------------------------

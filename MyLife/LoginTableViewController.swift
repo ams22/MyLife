@@ -86,6 +86,19 @@ class LoginTableViewController: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (indexPath.section == 0) {
+           cell.contentView.backgroundColor = uicolorFromHex(0xffff00)
+        }
+        if (indexPath.section == 1) {
+            if (indexPath.row % 2 != 0) {
+                cell.contentView.backgroundColor = uicolorFromHex(0xffff00)
+            } else {
+                cell.contentView.backgroundColor = uicolorFromHex(0x670067)
+            }
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

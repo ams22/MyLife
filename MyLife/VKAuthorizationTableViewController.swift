@@ -120,6 +120,16 @@ class VKAuthorizationTableViewController: UITableViewController {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (indexPath.section == 0) {
+            if (indexPath.row % 2 == 0) {
+                cell.contentView.backgroundColor = uicolorFromHex(0xffff00)
+            } else {
+                cell.contentView.backgroundColor = uicolorFromHex(0x670067)
+            }
+        }
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated);
     }
