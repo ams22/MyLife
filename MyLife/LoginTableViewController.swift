@@ -12,7 +12,7 @@ import VK_ios_sdk
 
 class LoginTableViewController: UITableViewController {
     
-    let scope = [VK_PER_WALL, VK_PER_PHOTOS, VK_PER_AUDIO, VK_PER_EMAIL]
+    let scope = [VK_PER_WALL, VK_PER_PHOTOS, VK_PER_AUDIO, VK_PER_EMAIL, VK_PER_FRIENDS]
     
     @IBOutlet weak var userEmail: UITextField!
     @IBOutlet weak var aboutButtonItem: UIBarButtonItem!
@@ -20,6 +20,14 @@ class LoginTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let filePath = NSHomeDirectory() + "/Library/Caches/test.txt"
+        do {
+            try NSFileManager.defaultManager().removeItemAtPath(filePath)
+        } catch _ as NSError {
+            
+        }
+        GlobalStorage.userID = ""
+        GlobalStorage.userEmail = ""
         let sdkInstance : VKSdk = VKSdk.initializeWithAppId("5442423")
         sdkInstance.registerDelegate(self)
         sdkInstance.uiDelegate = self

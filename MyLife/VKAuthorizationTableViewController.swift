@@ -26,6 +26,7 @@ class VKAuthorizationTableViewController: UITableViewController {
         self.next.enabled = false
         self.avatar.image = nil
         authorizedConnect()
+        getPhoto()
     }
     
     func getDataFromUrl(url:NSURL, completion: ((data: NSData?, response: NSURLResponse?, error: NSError? ) -> Void)) {
@@ -68,6 +69,41 @@ class VKAuthorizationTableViewController: UITableViewController {
         })
     }
     
+    func getPhoto() {
+        let request: VKRequest = VKApi.requestWithMethod("newsfeed.get", andParameters: ["owner_id": "56820028", "filters": "photo", "max_photos": "100", "count": "100"])
+        request.executeWithResultBlock(
+            {response in
+                //print(response.json)
+                var str: String = ""
+                let respon = response.json["items"] as! NSArray
+                for item in respon {
+                    let photos = item["photos"]
+                    let it = photos!!["items"] as! NSArray
+                    for i in it {
+                        print(i["photo_604"])
+                        if let photo_url = i["photo_604"] {
+                            //self.imagesLinks.append(photo_url as! String)
+                            str = str + (photo_url as! String) + " "
+                            print(photo_url as! String)
+                        }
+                    }
+                }
+                self.writeToFile(str)
+            }, errorBlock: {error in
+                print(error)
+        })
+    }
+    
+    func writeToFile(str: String) {
+        let filePath = NSHomeDirectory() + "/Library/Caches/test.txt"
+        print(filePath)
+        do {
+            _ = try str.writeToFile(filePath, atomically: true, encoding: NSUTF8StringEncoding)
+        } catch let error as NSError {
+            print(error.description)
+        }
+    }
+    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if (indexPath.section == 0) {
             switch (indexPath.item) {
@@ -80,6 +116,7 @@ class VKAuthorizationTableViewController: UITableViewController {
                     break
             }
         }
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
     
     override func viewWillAppear(animated: Bool) {

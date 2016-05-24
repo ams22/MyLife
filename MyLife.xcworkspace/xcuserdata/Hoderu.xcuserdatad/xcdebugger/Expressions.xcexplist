@@ -23,10 +23,16 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "TimeTableTableViewController.viewDidLoad() -&gt; ():TimeTableTableViewController.swift">
+         contextName = "VKAuthorizationTableViewController.(authorizedConnect() -&gt; ()).(closure #1).(closure #1):VKAuthorizationTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "GlobalStorage.userEmail">
+               value = "response.json">
+            </PersistentString>
+            <PersistentString
+               value = "dict[&quot;photo_400_orig&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "response.description">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -39,16 +45,10 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "VKAuthorizationTableViewController.(authorizedConnect() -&gt; ()).(closure #1).(closure #1):VKAuthorizationTableViewController.swift">
+         contextName = "MusicTableViewController.viewDidLoad() -&gt; ():MusicTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "response.description">
-            </PersistentString>
-            <PersistentString
-               value = "response.json">
-            </PersistentString>
-            <PersistentString
-               value = "dict[&quot;photo_400_orig&quot;]">
+               value = "VKSdk.accessToken().accessToken">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -69,10 +69,16 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "MusicTableViewController.viewDidLoad() -&gt; ():MusicTableViewController.swift">
+         contextName = "TimeTableTableViewController.viewDidLoad() -&gt; ():TimeTableTableViewController.swift">
          <PersistentStrings>
             <PersistentString
-               value = "VKSdk.accessToken().accessToken">
+               value = "GlobalStorage.userEmail">
+            </PersistentString>
+            <PersistentString
+               value = "userEmailClass.description">
+            </PersistentString>
+            <PersistentString
+               value = "userEmailClass">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -93,11 +99,22 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "PhotoTableViewController.viewDidLoad() -&gt; ():PhotoTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "downloadedImages">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ImageInFullSizeViewController.viewWillAppear(Bool) -&gt; ():ImageInFullSizeViewController.swift">
       </ContextState>
       <ContextState
          contextName = "LoginTableViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():LoginTableViewController.swift">
          <PersistentStrings>
+            <PersistentString
+               value = "userEmailClass.userEmail">
+            </PersistentString>
             <PersistentString
                value = "GlobalStorage.userID">
             </PersistentString>
@@ -119,6 +136,14 @@
             </PersistentString>
             <PersistentString
                value = "indexPath.section">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SettingsTableViewController.viewDidLoad() -&gt; ():SettingsTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.check">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

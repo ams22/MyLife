@@ -455,7 +455,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="timetableLabel" destination="Wje-4b-khc" id="zxp-Y2-zIB"/>
-                                    <segue destination="O0l-1t-bas" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="5zr-mL-7Xo"/>
+                                    <segue destination="O0l-1t-bas" kind="custom" identifier="menuToTimeTableTableViewController" customClass="SWRevealViewControllerSeguePushController" id="5zr-mL-7Xo"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsMenuCell" id="7jW-9h-1bR" customClass="SettingsMenuCell" customModule="MyLife" customModuleProvider="target">
@@ -475,7 +475,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="settingsLabel" destination="wjj-ad-SRB" id="TjB-sJ-XRx"/>
-                                    <segue destination="ngJ-c1-V4Z" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="4bc-4K-RS4"/>
+                                    <segue destination="ngJ-c1-V4Z" kind="custom" identifier="menuToSettingsViewController" customClass="SWRevealViewControllerSeguePushController" id="4bc-4K-RS4"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MusicMenuCell" id="ZQ8-F9-Alh" userLabel="MusicMenuCell" customClass="MusicMenuCell" customModule="MyLife" customModuleProvider="target">
@@ -495,7 +495,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="musicLabel" destination="335-Jp-GAD" id="N5y-Ja-XfG"/>
-                                    <segue destination="2vC-NI-uAK" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="K4F-KN-5Gf"/>
+                                    <segue destination="2vC-NI-uAK" kind="custom" identifier="menuToMusicTableViewController" customClass="SWRevealViewControllerSeguePushController" id="K4F-KN-5Gf"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoMenuCell" id="cCf-Tb-RIn" userLabel="PhotoMenuCell" customClass="PhotoMenuCell" customModule="MyLife" customModuleProvider="target">
@@ -515,7 +515,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="photoLabel" destination="FhZ-DW-iG2" id="jZd-aj-mRI"/>
-                                    <segue destination="h86-3V-a1y" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="fV3-Yo-gUm"/>
+                                    <segue destination="h86-3V-a1y" kind="custom" identifier="menuToImageTableViewController" customClass="SWRevealViewControllerSeguePushController" id="fV3-Yo-gUm"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -609,20 +609,20 @@
         <scene sceneID="XPB-Ue-87Z">
             <objects>
                 <tableViewController storyboardIdentifier="photoTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rOH-8q-AOM" customClass="PhotoTableViewController" customModule="MyLife" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="28" sectionFooterHeight="28" id="PS7-JM-1Dc">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="227" sectionHeaderHeight="28" sectionFooterHeight="28" id="PS7-JM-1Dc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="firstCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstCell" rowHeight="130" id="0zP-tm-I46" customClass="PhotoTableViewCell" customModule="MyLife" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="130"/>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="firstCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstCell" rowHeight="227" id="0zP-tm-I46" customClass="PhotoTableViewCell" customModule="MyLife" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="227"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0zP-tm-I46" id="0wS-wU-hY7">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="129"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="226"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ach-vM-A32">
-                                            <rect key="frame" x="0.0" y="0.0" width="229" height="129"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="284" height="226"/>
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>

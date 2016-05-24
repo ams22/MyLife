@@ -8,11 +8,13 @@
 
 import Foundation
 import UIKit
+import VK_ios_sdk
 
 class PhotoTableViewController: UITableViewController {
     
     @IBOutlet weak var menuButton: UIBarButtonItem!
     
+    var userID = ""
     var imagesLinks: [String] = []
     var imageDownloader: ImageDownloader!
     static var downloadedImages = [NSIndexPath : ImageRecord]()
@@ -24,9 +26,32 @@ class PhotoTableViewController: UITableViewController {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        let path = NSBundle.mainBundle().pathForResource("downloadingList", ofType: "txt")
-        self.imagesLinks = (try! String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)).componentsSeparatedByString("\n")
+        
+        PhotoTableViewController.downloadedImages.removeAll()
+        
+        if (userID == "") {
+            let alert = UIAlertController(title: "Вы не залогинились через вк", message: "Вот котики", preferredStyle: UIAlertControllerStyle.Alert)
+            let actionOk = UIAlertAction(title: "Хорошо", style: UIAlertActionStyle.Default, handler: nil)
+            alert.addAction(actionOk)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+        
+        let filePath = NSHomeDirectory() + "/Library/Caches/test.txt"
+        do {
+            self.imagesLinks = (try String(contentsOfFile: filePath, encoding: NSUTF8StringEncoding)).componentsSeparatedByString(" ")
+        } catch _ as NSError {
+            let path = NSBundle.mainBundle().pathForResource("downloadingList", ofType: "txt")
+            self.imagesLinks = (try! String(contentsOfFile: path!, encoding: NSUTF8StringEncoding)).componentsSeparatedByString("\n")
+        }
     }
+    
+    func getDocumentsDirectory() -> NSString {
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
+        let documentsDirectory = paths[0]
+        return documentsDirectory
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -57,4 +57,22 @@ class MenuController: UITableViewController {
             return tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
         }
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "menuToMusicTableViewController") {
+            let destination = segue.destinationViewController as! UINavigationController
+            let controller = destination.childViewControllers.first as! MusicTableViewController
+            controller.userID = GlobalStorage.userID
+        }
+        if (segue.identifier == "menuToImageTableViewController") {
+            let destination = segue.destinationViewController as! UINavigationController
+            let controller = destination.childViewControllers.first as! PhotoTableViewController
+            controller.userID = GlobalStorage.userID
+        }
+    }
+//    UINavigationController *destination = segue.destinationViewController;
+//    MGRListViewController *controller = destination.viewControllers.firstObject;
+//    controller.session = self.session;
+    
+    
 }

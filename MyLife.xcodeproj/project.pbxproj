@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A2F1C9F87C66831133382CA7 /* Pods_MyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E82E67FC97C72851D7A8B1F /* Pods_MyLife.framework */; };
 		B45D88E0A050BF4F4889314B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875844F3A7DAFCDF2FF873A0 /* Pods.framework */; };
+		F107BAF41CF4DDE900FD1771 /* downloadingListVK.txt in Resources */ = {isa = PBXBuildFile; fileRef = F107BAF31CF4DDE900FD1771 /* downloadingListVK.txt */; };
 		F153A9731CF1F29600DAF522 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153A9721CF1F29600DAF522 /* Track.swift */; };
 		F153A9751CF1F2AC00DAF522 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153A9741CF1F2AC00DAF522 /* TrackCell.swift */; };
 		F153A9771CF1F2BD00DAF522 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153A9761CF1F2BD00DAF522 /* Download.swift */; };
@@ -83,6 +84,7 @@
 		6DD4563F5F3D0D52551AAFB0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		875844F3A7DAFCDF2FF873A0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E82E67FC97C72851D7A8B1F /* Pods_MyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F107BAF31CF4DDE900FD1771 /* downloadingListVK.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = downloadingListVK.txt; sourceTree = SOURCE_ROOT; };
 		F153A9721CF1F29600DAF522 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		F153A9741CF1F2AC00DAF522 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		F153A9761CF1F2BD00DAF522 /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 		F17F39181CCFDD3600B4654C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				F107BAF31CF4DDE900FD1771 /* downloadingListVK.txt */,
 				F17F39541CD0427000B4654C /* downloadingList.txt */,
 				F1ABAE301CC8E1D200123FE4 /* Assets.xcassets */,
 				F1ABAE321CC8E1D200123FE4 /* LaunchScreen.storyboard */,
@@ -559,6 +562,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F107BAF41CF4DDE900FD1771 /* downloadingListVK.txt in Resources */,
 				F1ABAE341CC8E1D200123FE4 /* LaunchScreen.storyboard in Resources */,
 				F1ABAE311CC8E1D200123FE4 /* Assets.xcassets in Resources */,
 				F1ABAE2C1CC8E1D200123FE4 /* Main.storyboard in Resources */,

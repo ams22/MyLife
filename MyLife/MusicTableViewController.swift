@@ -22,6 +22,7 @@ class MusicTableViewController: UIViewController, NSURLSessionDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     var searchResults = [Track]()
+    var userID = ""
     
     lazy var downloadsSession: NSURLSession = {
         let configuration = NSURLSessionConfiguration.defaultSessionConfiguration()
@@ -36,7 +37,7 @@ class MusicTableViewController: UIViewController, NSURLSessionDelegate {
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        if (GlobalStorage.userID == "") {
+        if (userID == "") {
             let alert = UIAlertController(title: "Вы не залогинились через вк", message: "", preferredStyle: UIAlertControllerStyle.Alert)
             let actionOk = UIAlertAction(title: "Хорошо", style: UIAlertActionStyle.Default, handler: nil)
             alert.addAction(actionOk)
@@ -52,7 +53,7 @@ class MusicTableViewController: UIViewController, NSURLSessionDelegate {
     
     func updateSearchResults() {
         searchResults.removeAll()
-        let request: VKRequest = VKApi.requestWithMethod("audio.get", andParameters: ["owner_id": GlobalStorage.userID, "count": "100"])
+        let request: VKRequest = VKApi.requestWithMethod("audio.get", andParameters: ["owner_id": userID, "count": "100"])
         request.executeWithResultBlock(
             {response in
                 print(response.json)
