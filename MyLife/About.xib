@@ -14,7 +14,7 @@
                     <rect key="frame" x="8" y="123" width="583" height="167"/>
                     <string key="text">Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. Приложение текст. </string>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="hqdefault" translatesAutoresizingMaskIntoConstraints="NO" id="OSR-YM-1Fc">
@@ -31,7 +31,7 @@
                         <constraint firstAttribute="height" constant="40" id="dk5-ML-cpg"/>
                     </constraints>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>

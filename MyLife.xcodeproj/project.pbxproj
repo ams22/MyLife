@@ -10,6 +10,7 @@
 		A2F1C9F87C66831133382CA7 /* Pods_MyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E82E67FC97C72851D7A8B1F /* Pods_MyLife.framework */; };
 		B45D88E0A050BF4F4889314B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 875844F3A7DAFCDF2FF873A0 /* Pods.framework */; };
 		F107BAF41CF4DDE900FD1771 /* downloadingListVK.txt in Resources */ = {isa = PBXBuildFile; fileRef = F107BAF31CF4DDE900FD1771 /* downloadingListVK.txt */; };
+		F107BAF61CF5E12A00FD1771 /* LoginTableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F107BAF51CF5E12A00FD1771 /* LoginTableViewControllerTests.swift */; };
 		F153A9731CF1F29600DAF522 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153A9721CF1F29600DAF522 /* Track.swift */; };
 		F153A9751CF1F2AC00DAF522 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153A9741CF1F2AC00DAF522 /* TrackCell.swift */; };
 		F153A9771CF1F2BD00DAF522 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F153A9761CF1F2BD00DAF522 /* Download.swift */; };
@@ -85,6 +86,7 @@
 		875844F3A7DAFCDF2FF873A0 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E82E67FC97C72851D7A8B1F /* Pods_MyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F107BAF31CF4DDE900FD1771 /* downloadingListVK.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = downloadingListVK.txt; sourceTree = SOURCE_ROOT; };
+		F107BAF51CF5E12A00FD1771 /* LoginTableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewControllerTests.swift; sourceTree = "<group>"; };
 		F153A9721CF1F29600DAF522 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		F153A9741CF1F2AC00DAF522 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
 		F153A9761CF1F2BD00DAF522 /* Download.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				F1ABAE3E1CC8E1D200123FE4 /* MyLifeTests.swift */,
+				F107BAF51CF5E12A00FD1771 /* LoginTableViewControllerTests.swift */,
 				F1ABAE401CC8E1D200123FE4 /* Info.plist */,
 			);
 			path = MyLifeTests;
@@ -691,6 +694,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1ABAE3F1CC8E1D200123FE4 /* MyLifeTests.swift in Sources */,
+				F107BAF61CF5E12A00FD1771 /* LoginTableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

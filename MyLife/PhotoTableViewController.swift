@@ -22,10 +22,11 @@ class PhotoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //-----------------------COLORS------------------------------------------
-        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.barTintColor = uicolorFromHex(0x670067)
         //-----------------------------------------------------------------------
         if self.revealViewController() != nil {
+            menuButton.tintColor = UIColor.whiteColor()
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())

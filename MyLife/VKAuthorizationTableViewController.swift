@@ -14,6 +14,7 @@ import VK_ios_sdk
 class VKAuthorizationTableViewController: UITableViewController {
     
     let scope = [VK_PER_WALL, VK_PER_PHOTOS, VK_PER_AUDIO, VK_PER_EMAIL]
+    var str: MyClass?
     
     @IBOutlet weak var id: UITextField!
     @IBOutlet weak var name: UITextField!
@@ -27,7 +28,6 @@ class VKAuthorizationTableViewController: UITableViewController {
         self.next.enabled = false
         self.avatar.image = nil
         authorizedConnect()
-        getPhoto()
     }
     
     func getDataFromUrl(url:NSURL, completion: ((data: NSData?, response: NSURLResponse?, error: NSError? ) -> Void)) {
@@ -42,6 +42,7 @@ class VKAuthorizationTableViewController: UITableViewController {
                 print(VKSdk.accessToken().accessToken)
                 GlobalStorage.userEmail = VKSdk.accessToken().email
                 GlobalStorage.userEmail = GlobalStorage.userEmail .stringByReplacingOccurrencesOfString("%40", withString: "@", options: NSStringCompareOptions.LiteralSearch, range: nil)
+                
                 let request: VKRequest = VKApi.requestWithMethod("users.get", andParameters: ["fields":"photo_400_orig"])
                 request.executeWithResultBlock(
                     {response in
@@ -50,6 +51,7 @@ class VKAuthorizationTableViewController: UITableViewController {
                             let dict = respon[0] as? NSDictionary {
                                 self.id.text = String(dict["id"] as! Int)
                                 GlobalStorage.userID = String(dict["id"] as! Int)
+                                self.getPhoto()
                                 self.name.text = dict["first_name"] as? String
                                 self.surname.text = dict["last_name"] as? String
                                 self.next.enabled = true
@@ -57,7 +59,9 @@ class VKAuthorizationTableViewController: UITableViewController {
                                 //networkHelper.getImageWithURL((dict["photo_400_orig"] as? String)!)
                                 let url = NSURL(string: String(dict["photo_400_orig"]!))
                                 self.getDataFromUrl(url!) { (data, response, error)  in
-                                    self.avatar.image = UIImage(data: data!)
+                                    dispatch_async(dispatch_get_main_queue()) {
+                                        self.avatar.image = UIImage(data: data!)
+                                    }
                                     //self.tableView.reloadData()
                                 }
                         } else {
@@ -73,7 +77,7 @@ class VKAuthorizationTableViewController: UITableViewController {
     }
     
     func getPhoto() {
-        let request: VKRequest = VKApi.requestWithMethod("newsfeed.get", andParameters: ["owner_id": "56820028", "filters": "photo", "max_photos": "100", "count": "100"])
+        let request: VKRequest = VKApi.requestWithMethod("newsfeed.get", andParameters: ["owner_id": GlobalStorage.userID, "filters": "photo", "max_photos": "100", "count": "100"])
         request.executeWithResultBlock(
             {response in
                 //print(response.json)

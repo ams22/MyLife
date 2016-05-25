@@ -44,6 +44,7 @@ class MenuController: UITableViewController {
             let cell = tableView.dequeueReusableCellWithIdentifier("TimetableMenuCell", forIndexPath: indexPath) as! TimetableMenuCell
             cell.timetableLabel?.text = "Расписание"
             cell.backgroundColor = uicolorFromHex(0x950095)
+            cell.timetableLabel.textColor = UIColor.whiteColor()
             return cell
         case 2:
             let cell = tableView.dequeueReusableCellWithIdentifier("SettingsMenuCell", forIndexPath: indexPath) as! SettingsMenuCell
@@ -54,6 +55,7 @@ class MenuController: UITableViewController {
             let cell = tableView.dequeueReusableCellWithIdentifier("MusicMenuCell", forIndexPath: indexPath) as! MusicMenuCell
             cell.musicLabel?.text = "Музыка"
             cell.backgroundColor = uicolorFromHex(0x950095)
+            cell.musicLabel.textColor = UIColor.whiteColor()
             return cell
         case 4:
             let cell = tableView.dequeueReusableCellWithIdentifier("PhotoMenuCell", forIndexPath: indexPath) as! PhotoMenuCell

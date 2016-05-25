@@ -42,7 +42,7 @@
                                                         <constraint firstAttribute="width" constant="200" id="4Ao-nH-byT"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
@@ -81,7 +81,7 @@
                                                         <constraint firstAttribute="width" constant="59" id="XNt-1u-kBZ"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.96945112179487181" green="0.96945112179487181" blue="0.96945112179487181" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -309,7 +309,7 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <state key="normal" title="Войти">
-                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <action selector="tryEnterWithEmail:" destination="4DK-BK-4O5" eventType="touchUpInside" id="I91-Lh-8ul"/>
@@ -363,7 +363,7 @@
                                                     <rect key="frame" x="19" y="8" width="46" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <state key="normal" title="About">
-                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
                                                     <connections>
                                                         <segue destination="wm4-Rx-g1w" kind="show" id="XY8-ch-EN2"/>
@@ -901,6 +901,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3MD-dY-7aW"/>
-        <segue reference="7Yv-Ui-c5C"/>
+        <segue reference="O3w-CS-rUy"/>
     </inferredMetricsTieBreakers>
 </document>

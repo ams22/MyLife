@@ -10,6 +10,10 @@ import UIKit
 import CoreData
 import VK_ios_sdk
 
+class MyClass {
+    var str : NSMutableString = ""
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -22,7 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         registerForPushNotifications(application)
-        
         // Override point for customization after application launch.
         return true
     }

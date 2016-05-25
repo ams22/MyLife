@@ -29,7 +29,7 @@ class LoginTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = uicolorFromHex(0xffff00)
-        self.navigationController?.navigationBar.tintColor = UIColor.blackColor()
+        self.navigationController?.navigationBar.tintColor = UIColor.whiteColor()
         self.navigationController?.navigationBar.barTintColor = uicolorFromHex(0x670067)
         
         let filePath = NSHomeDirectory() + "/Library/Caches/test.txt"

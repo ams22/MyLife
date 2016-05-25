@@ -38,6 +38,7 @@ class MusicTableViewController: UIViewController, NSURLSessionDelegate {
         self.navigationController?.navigationBar.barTintColor = uicolorFromHex(0x670067)
         //-----------------------------------------------------------------------
         if self.revealViewController() != nil {
+            menuButton.tintColor = UIColor.whiteColor()
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -182,8 +183,12 @@ extension MusicTableViewController: UITableViewDataSource {
         
         if (indexPath.row % 2 == 0) {
             cell.backgroundColor = uicolorFromHex(0xffff00)
+            cell.titleLabel.textColor = UIColor.blackColor()
+            cell.artistLabel.textColor = UIColor.blackColor()
         } else {
             cell.backgroundColor = uicolorFromHex(0x670067)
+            cell.titleLabel.textColor = UIColor.whiteColor()
+            cell.artistLabel.textColor = UIColor.whiteColor()
         }
         
         let downloaded = localFileExistsForTrack(track)

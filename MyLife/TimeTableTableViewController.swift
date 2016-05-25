@@ -92,6 +92,7 @@ class TimeTableTableViewController: UITableViewController {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         self.managedContext = appDelegate.managedObjectContext
         if self.revealViewController() != nil {
+            menuButton.tintColor = UIColor.whiteColor()
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
@@ -126,8 +127,8 @@ class TimeTableTableViewController: UITableViewController {
         let cell = timeTable.dequeueReusableCellWithIdentifier("Cell")
         let plan = plans[indexPath.row]
         
-        let str = plan.valueForKey("email") as? String
-        cell!.textLabel!.text = str! + (plan.valueForKey("plans") as? String)!
+        //let str = plan.valueForKey("email") as? String
+        cell!.textLabel!.text = (plan.valueForKey("plans") as? String)!
        
         cell!.backgroundColor = uicolorFromHex(0xffff00)
         return cell!
