@@ -41,6 +41,7 @@ class VKAuthorizationTableViewController: UITableViewController {
             if (state == VKAuthorizationState.Authorized) {
                 print(VKSdk.accessToken().accessToken)
                 GlobalStorage.userEmail = VKSdk.accessToken().email
+                GlobalStorage.userEmail = GlobalStorage.userEmail .stringByReplacingOccurrencesOfString("%40", withString: "@", options: NSStringCompareOptions.LiteralSearch, range: nil)
                 let request: VKRequest = VKApi.requestWithMethod("users.get", andParameters: ["fields":"photo_400_orig"])
                 request.executeWithResultBlock(
                     {response in

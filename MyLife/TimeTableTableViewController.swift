@@ -126,7 +126,8 @@ class TimeTableTableViewController: UITableViewController {
         let cell = timeTable.dequeueReusableCellWithIdentifier("Cell")
         let plan = plans[indexPath.row]
         
-        cell!.textLabel!.text = plan.valueForKey("plans") as? String
+        let str = plan.valueForKey("email") as? String
+        cell!.textLabel!.text = str! + (plan.valueForKey("plans") as? String)!
        
         cell!.backgroundColor = uicolorFromHex(0xffff00)
         return cell!
